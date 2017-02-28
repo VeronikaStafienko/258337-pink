@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Veronika Stafienko](https://up.htmlacademy.ru/adaptive/10/user/258337).
-* Наставник: `Неизвестно`.
+* Наставник: `[Вадим Аркадов](https://htmlacademy.ru/profile/id313867).
 
 ---
 
