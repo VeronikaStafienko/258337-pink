@@ -8,7 +8,7 @@
   <body>
     <header class="page-header">
       <div class="page-header__logo">
-        <img src="http://placehold.it/75x22">
+        <img src="http://placehold.it/75x22" width="75" height="22">
       </div>
       <nav class="main-nav main-nav--closed">
         <button class="main-nav__toggle" type="button">Открыть меню</button>
@@ -80,17 +80,17 @@
         </li>
       </ul>
     </section>
-    <section class="post photo">
+    <section class="post-photo">
       <p class="post-photo_title">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
       <form class="post-form" action="https://echo.htmlacademy.ru/" method="post">
         <img src="#" width="280" height="384" alt="photo">
         <ul class="post-form__transform">
           <li>
-            <a class="post-form__btn crop" href="#">обрезка</a></li>
+            <a class="post-form__btn post-form__btn--crop" href="#">обрезка</a></li>
           <li>
-            <a class="post-form__btn fill" href="#">заливка</a></li>
+            <a class="post-form__btn post-form__btn--fill" href="#">заливка</a></li>
           <li>
-            <a class="post-form__btn contrast" href="#">контрастность</a></li>
+            <a class="post-form__btn post-form__btn--contrast" href="#">контрастность</a></li>
         </ul>
         <div class="post-form__toggle range-controls">
           <div class="range-controls__scale">
@@ -106,16 +106,22 @@
         <img src="#" width="147" height="40" alt="PINK">
       </div>
       <div class="page-footer__social">
-        <span class="social-links">
-          <a class="social-link social-link--tw" href="#">Мы в Твиттере</a>
-          <a class="social-link social-link--fb" href="#">Мы в Фейсбуке</a>
-          <a class="social-link social-link--yt" href="#">Мы в YouTube</a>
-        </span>
+        <ul class="social-links">
+          <li>
+            <a class="social-link social-link--tw" href="#">Мы в Твиттере</a>
+          </li>
+          <li>
+            <a class="social-link social-link--fb" href="#">Мы в Фейсбуке</a>
+          </li>
+          <li>
+            <a class="social-link social-link--yt" href="#">Мы в YouTube</a>
+          </li>
+        </ul>
       </div>
       <div class="page-footer__copyright">
         <span>Разработано:</span>
         <a class="page-footer__copyright-link " href="https://htmlacademy.ru">
-          <img src="http://placehold.it/27x34" alt="htmlacademy.ru">HTML
+          <img src="http://placehold.it/27x34" width="27" height="34" alt="htmlacademy.ru">HTML
         </a>
       </div>
     </footer>
