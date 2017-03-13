@@ -1,0 +1,67 @@
+.reviews {
+  .container();
+  padding-top: 45px;
+  padding-bottom: 75px;
+  text-align: center;
+
+}
+
+.reviews__text {
+  padding: 0 20px;
+}
+
+.reviews__auhor-name {
+  display: block;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+  color: #000000;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.reviews__text p {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 30px;
+  color: #283645;
+  padding: 0;
+  margin: 0;
+}
+
+.slider {
+  position: relative;
+}
+
+.slider__toggle {
+  position: absolute;
+  right: 125px;
+  top: 250px;
+}
+
+.slider__toggle input {
+  display: none;
+}
+
+.slider__toggles label {
+  display: inline-block;
+  width: 1px;
+  height: 1px;
+  border-radius: 50%;
+  border: 3px solid #bec2c7;
+  box-sizing: border-box;
+  margin: 0 7px;
+  cursor: pointer;
+  vertical-align: middle;
+}
+
+#btn-1:checked ~ .slider__toggles label[for="btn-1"],
+#btn-2:checked ~ .slider__toggles label[for="btn-2"],
+#btn-3:checked ~ .slider__toggles label[for="btn-3"] {
+  width: 6px;
+  height: 6px;
+  border: 3px solid #283645;
+  box-sizing: content-box;
+}

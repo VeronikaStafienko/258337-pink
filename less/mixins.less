@@ -1,23 +1,30 @@
-  body {
-    min-width: 320px; // лучше задать на body, чтобы не выпадали фоны
-  }
+body {
+  min-width: 320px;
+}
 
-  .container() {
-    width: 280px;
-    margin: 0 auto;
-    padding: 0 20px;
+.clearfix() {
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
   }
+}
 
-  @media @tablet-widths {
-    .container {
-      width: 640px;
-      padding: 0 64px;
-    }
-  }
+.container() {
+  width: 320px;
+  margin: 0 auto;
+}
 
-  @media @desktop-widths {
-    .container {
-      width: 960px;
-      padding: 0 120px;
-    }
+@media @tablet-widths {
+  .container {
+    width: 640px;
+    padding: 0 64px;
   }
+}
+
+@media @desktop-widths {
+  .container {
+    width: 960px;
+    padding: 0 120px;
+  }
+}
