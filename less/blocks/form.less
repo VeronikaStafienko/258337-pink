@@ -3,12 +3,11 @@
 }
 
 .appointment-form__details {
-  height: 367px;
-  padding: 0 20px;
+  padding: 33px 20px;
+  padding-bottom: 22px;
 }
 
 .appointment-form__details label {
-  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 30px;
   color: #d22856;
@@ -21,21 +20,21 @@
   padding: 22px 18px;
   border: 2px solid #e5e5e5;
   margin-top: 5px;
-  margin-bottom: 15px;
+  margin-bottom: 17px;
 }
 
-fieldset {
+.appointment-form__progress {
   border: none;
   height: 526px;
   padding: 40px 0;
   margin: 0;
+  margin-top: ;
   background-color: @bg-light;
 }
 
 .appointment-form__progress legend {
   display: block;
   text-align: center;
-  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
   color: #d22856;
@@ -45,6 +44,128 @@ fieldset {
   background-color: @bg-light;
 }
 
-.appointment-form__progress input {
+.appointment-form__progress input,
+.appointment-form__additional input {
+  display: none;
+}
+
+.appointment-form__icon-check {
+  display: block;
+  margin-bottom: 45px;
+  margin-top: 3px;
+  font-size: 18px;
+  line-height: 30px;
+  color: #283645;
+}
+
+.appointment-form__progress input + label::before {
+  content: "";
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  margin-right: 30px;
+  margin-left: 20px;
+  vertical-align: middle;
+  border: 1px solid #e5e5e5;
+  background-color: #fff;
+}
+
+.appointment-form__progress input:checked + label::before {
+  background: url("../img/icon-yes-red.svg") no-repeat;
+  background-position: center;
+  background-color: #fff;
+}
+
+.appointment-form__additional {
+  border: none;
+  padding: 35px 0;
+  padding-bottom: 0;
+  margin: 0;
+  background-color: @bg-light;
+}
+
+.radiobuttons__text {
+  display: block;
+  margin-bottom: 40px;
+  margin-top: 3px;
+  font-size: 18px;
+  line-height: 30px;
+  color: #283645;
+}
+
+.appointment-form__additional legend {
+  display: block;
+  text-align: center;
+  font-size: 14px;
+  line-height: 18px;
+  color: #d22856;
+  text-transform: uppercase;
+  padding: 0 40px;
+  padding-top: 40px;
+  background-color: @bg-light;
+}
+
+.appointment-form__additional input + label::before {
+  content: "";
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  margin-right: 30px;
+  margin-left: 20px;
+  vertical-align: middle;
+  border: 1px solid #e5e5e5;
+  background-color: #fff;
+}
+
+.appointment-form__additional input:checked + label::before {
+  background: url("../img/icon-map-marker.svg") no-repeat;
+  background-position: center;
+}
+
+.appointment-form__description {
+  padding: 32px 20px;
+}
+
+.appointment-form__title {
+  display: block;
+  text-align: center;
+  font-size: 14px;
+  line-height: 30px;
+  color: #d22856;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+.appointment-form__description input {
+  width: 276px;
+  height: 196px;
+  border: 2px solid #e5e5e5;
+  margin-bottom: 18px;
+}
+
+.appointment-form__send {
   width: 280px;
+  border: none;
+  border-radius: 3px;
+  padding: 16px 45px;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
+  color: #fff;
+  text-transform: uppercase;
+  background-color: #2aab6d;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.form__annotation {
+  display: block;
+  width: 185px;
+  font-size: 14px;
+  line-height: 30px;
+  color: #283645;
+  text-transform: uppercase;
+  margin-left: auto;
+  margin-right: auto;
 }
