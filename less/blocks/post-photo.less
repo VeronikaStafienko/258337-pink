@@ -1,0 +1,103 @@
+.post-photo {
+  .container();
+  text-align: center;
+}
+
+.post-photo_title {
+  display: block;
+  margin: 0;
+  padding: 40px 30px;
+  padding-bottom: 25px;
+  font-size: 14px;
+  line-height: 30px;
+  color: #283645;
+  margin-bottom: 18px;
+}
+
+.post-form {
+  background-color: @bg-light;
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+
+.post-form__transform {
+  list-style: none;
+  padding: 0;
+  margin: 30px 0;
+  margin-left: 52px;
+  .clearfix();
+}
+
+.post-form__btn {
+  display: inline-block;
+  float: left;
+  width: 50px;
+  height: 50px;
+  vertical-align: middle;
+  margin-right: 30px;
+}
+
+post-form__transform a:last-child {
+  margin-right: 0;
+}
+
+.post-form__btn--crop {
+  background: url("../img/icon-editor-crop.svg") no-repeat;
+  background-position: center;
+}
+
+.post-form__btn--fill {
+  background: url("../img/icon-editor-fill.svg") no-repeat;
+  background-position: center;
+}
+
+.post-form__btn--contrast {
+  background: url("../img/icon-editor-contrast.svg") no-repeat;
+  background-position: center;
+}
+
+.range-controls {
+  position: relative;
+  margin-top: 37px;
+  margin-left: 40px;
+  margin-bottom: 75px;
+}
+
+.range-controls__scale {
+  width: 240px;
+}
+
+.range-controls__bar {
+  height: 2px;
+  background-color: #283645;
+}
+
+.range-controls__toggle {
+  position: absolute;
+  top: -5px;
+  right: 27%;
+  width: 10px;
+  height: 10px;
+  border: 2px solid #d22856;
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+.post-form__btn-transparent {
+  width: 280px;
+  border: 3px solid rgba(40, 54, 69, 0.1);
+  border-radius: 30px;
+  padding: 15px 0;
+  text-align: center;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: bold;
+  color: rgba(40, 54, 69, 0.1);
+  background-color: #fff;
+  margin-bottom: 10px;
+}
+
+.post-form__btn-transparent--active {
+  border: 3px solid #d22856;
+  color: #d22856;
+}
