@@ -1,0 +1,31 @@
+body {
+  min-width: 320px;
+  font-family: "Open Sans", "Arial", sans-serif;
+}
+
+.clearfix() {
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+.container() {
+  width: 320px;
+  margin: 0 auto;
+}
+
+@media @tablet-widths {
+  .container {
+    width: 640px;
+    padding: 0 64px;
+  }
+}
+
+@media @desktop-widths {
+  .container {
+    width: 960px;
+    padding: 0 120px;
+  }
+}

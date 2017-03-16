@@ -1,0 +1,94 @@
+.photos {
+  .container();
+}
+
+.photos__list {
+  list-style: none;
+  padding: 25px 20px;
+  padding-bottom: 0;
+  margin: 0;
+}
+
+.photos__item {
+  background-color: @bg-light;
+  margin-bottom: 18px;
+}
+
+.photos__list li:last-child {
+  margin-bottom: 0;
+}
+
+.photos__list li:first-child img {
+  margin-left: -20px;
+}
+
+.photos__list li:first-child {
+  position: relative;
+}
+
+.photos__list li:first-child b {
+  display: block;
+  position: absolute;
+  width: 104px;
+  right: -1px;
+  background-color: #d22856;
+  font-size: 12px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 5px 18px;
+}
+
+.photos__text {
+  padding: 13px 20px;
+  padding-bottom: 20px;
+}
+
+.photos__list li:first-child div {
+  margin: 0;
+}
+
+.photos__auhor-name {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: bold;
+  font-style: normal;
+  color: #283645;
+}
+
+.photos__time {
+  font-size: 12px;
+  line-height: 24px;
+  font-weight: 300;
+  color: #283645;
+  text-transform: uppercase;
+}
+
+.photos__desc {
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  line-height: 24px;
+  color: #283645;
+}
+
+.photos__likes {
+  display: block;
+  position: relative;
+  padding-left: 30px;
+  padding-top: 10px;
+  font-size: 12px;
+  line-height: 24px;
+  color: #d22856;
+  text-transform: uppercase;
+}
+
+.photos__likes::before {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  top: 15px;
+  left: 1px;
+  background: url("../img/icon-heart.svg") no-repeat;
+}
