@@ -10,6 +10,9 @@
 
 .page-header__logo {
   height: 22px;
+  width: 75px;
+  background: url("../img/logo-pink-white-mobile.svg") no-repeat;
+  background-position: center;
   float: left;
   vertical-align: middle;
 }
@@ -17,10 +20,36 @@
 .page-header__button {
   float: right;
   margin: 0;
+  vertical-align: middle;
 }
 
 .page-header__toggle {
   border: 0;
   background: none;
   cursor: pointer;
+}
+
+@media @tablet-widths {
+  .page-header {
+    background-color: @bg-lightdark;
+    .container();
+  }
+  .page-header__header {
+    .clearfix();
+    padding: 40px;
+    padding-bottom: ;
+    vertical-align: middle;
+  }
+  .page-header__logo {
+    margin-left: 20px;
+    height: 40px;
+    width: 145px;
+    background: url("../img/logo-pink-white-tablet.svg") no-repeat;
+    background-position: center;
+    float: left;
+  }
+  .page-header__button {
+    float: right;
+    margin: 0;
+  }
 }

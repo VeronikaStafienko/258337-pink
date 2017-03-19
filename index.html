@@ -12,7 +12,6 @@
   <header class="page-header">
     <div class="page-header__header clearfix">
       <div class="page-header__logo">
-        <img src="img/logo-pink-white-mobile.svg" width="75" height="22">
       </div>
       <div class="page-header__button">
         <button class="page-header__toggle" type="button"><img src="img/icon-menu-cross.svg" width=24 height="23" alt=" закрыть"></button>
@@ -32,7 +31,9 @@
   <section class="intro">
     <div class="intro__image"></div>
     <div class="intro__download">
-      <ul class="intro__list ">
+      <h1 class="intro__title intro__title--visually_hidden">Взгляните<br>
+на жизнь иначе!</h1>
+      <ul class="intro__list">
         <li>
           <a class="intro__link intro__link--all " href="# ">Скачать приложение</a></li>
         <li>
@@ -45,12 +46,16 @@
           <a class="intro__link intro__link--microsoft" href="# "></a>
         </li>
       </ul>
+
+      <p class="intro__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
     </div>
-    <p class="intro__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
   </section>
   <section class="information">
-    <p class="information__slogan">Устали от серости мегаполиса?</p>
-    <p class="information__slogan">Нам есть, что вам предложить!</p>
+    <div class="information_slogans">
+      <p class="information__slogan">Устали от серости мегаполиса?</p>
+      <p class="information__slogan">Нам есть, что вам
+        <br>предложить!</p>
+    </div>
     <div class="information__block">
       <h2 class="information__title">Поднимает настроение</h2>
       <p class="information__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
@@ -59,13 +64,24 @@
       <h2 class="information__title">Заводит новых друзей</h2>
       <p class="information__description">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
     </div>
-    <div class="information__image">
+    <div class="information__image"></div>
+    <div class="information__info information__info--visually_hidden">
+      <img src="img/timer.png" width="238" height="276" alt="часы">
+      <div class="information__text">
+        <h1 class="information__head">Эффект <br>на 24 часа!</h1>
+        <p class="information__description">Британские ученые провели исследования и доказали, что положительный эффект
+          <br> от использования приложения длится целые сутки!</p>
+        <a class="information__more" href="#">Узнать больше об исследовании</a>
+      </div>
     </div>
   </section>
   <section class="reviews">
     <div class="reviews__text slider">
-      <b class="reviews__auhor-name">Николай Петров</b>
-      <p>«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+      <div class="author">
+        <b class="reviews__author_name">Николай Петров</b>
+        <b class="reviews__author_job reviews__author_job--visually_hidden">25 лет, водитель трамвая</b>
+      </div>
+      <p class="reviews__blog">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
       <div class="slider__toggle">
         <input class="slider__input" type="radio" id="btn-1" name="reviews" checked>
         <input class="slider__input" type="radio" id="btn-2" name="reviews">
@@ -80,10 +96,15 @@
   </section>
   <section class="price-list">
     <div class="price-list__block clearfix slider">
+      <ul class="price-list__items price-list__items--visually_hidden">
+        <li class="price-list__item price-list__item--visually_hidden">Розовый фильтр</li>
+        <li class="price-list__item price-list__item--visually_hidden">Смайлики</li>
+        <li class="price-list__item price-list__item--visually_hidden">Комментарии</li>
+      </ul>
       <ul class="price-list__items">
         <li class="price-list__header">
-          <h3 class="price-list__title">Стандарт</h3>
-          <b class="price-list__price">3,99 USD</b>
+          <h3 class="price-list__title">База</h3>
+          <b class="price-list__price">1,99 USD</b>
         </li>
         <li class="price-list__item price-list__item--check">Розовый фильтр</li>
         <li class="price-list__item price-list__item--cross">Смайлики</li>
@@ -100,8 +121,8 @@
       </ul>
       <ul class="price-list__items ">
         <li class="price-list__header">
-          <h3 class="price-list__title">Стандарт</h3>
-          <b class="price-list__price">3,99 USD</b>
+          <h3 class="price-list__title">Анлим</h3>
+          <b class="price-list__price">9,99 USD</b>
         </li>
         <li class="price-list__item price-list__item--check">Розовый фильтр</li>
         <li class="price-list__item price-list__item--check">Смайлики</li>
@@ -122,16 +143,38 @@
   <footer class="page-footer">
     <div class="page-footer__wrapper">
       <p class="page-footer__title">Остались вопросы? Свяжитесь с нами!</p>
-      <b class="page-footer__contacts">Звоните:</b>
-      <a href="tel:+78125556666"> +7 (812) 555-66-66</a>
-      <b class="page-footer__contacts">Пишите:</b>
-      <a href="e-mail:mail@htmlacademy.ru"><span class="page-footer__contacts-hidden">mail@htmlacademy.ru</a>
-      <b class="page-footer__contacts">Приезжайте в гости:</b>
-      <a href="№ "><span class="page-footer__contacts-hidden">ул. Большая Конюшенная, 19/8</a>
-    </div>
-    <div class="page-footer__map">
-
-    </div>
+      <div class="page-footer__info">
+        <div class="page-footer__information">
+          <b class="page-footer__contacts">Звоните:</b>
+          <a href="tel:+78125556666"> +7 (812) 555-66-66</a>
+        </div>
+        <div class="page-footer__information">
+          <b class="page-footer__contacts">Пишите:</b>
+          <a href="e-mail:mail@htmlacademy.ru"><span class="page-footer__contacts-hidden">mail@htmlacademy.ru</a>
+        </div>
+        <div class="page-footer__information">
+          <b class="page-footer__contacts">Приезжайте в гости:</b>
+          <a href="№ "><span class="page-footer__contacts-hidden">ул. Большая Конюшенная, 19/8</a>
+        </div>
+      </div>
+      <div class="page-footer__map">
+      </div>
+      <div class="page-footer__visually_hidden">
+        <div class="page-footer--form__logo">
+          <img src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="PINK">
+        </div>
+        <div class="page-footer--form__social clearfix">
+          <a class="page-footer--form__social-link page-footer--form__social-link--tw" href="#"></a>
+          <a class="page-footer--form__social-link page-footer--form__social-link--fb" href="#"></a>
+          <a class="page-footer--form__social-link page-footer--form__social-link--yt" href="#"></a>
+        </div>
+        <div class="page-footer--form__copyright">
+          <span>Разработано:</span>
+          <a class="page-footer-form__copyright-link " href="https://htmlacademy.ru">
+            <img src="img/htmlacademy.svg" width="27" height="34" alt="htmlacademy.ru">
+          </a>
+        </div>
+      </div>
   </footer>
 </body>
 
