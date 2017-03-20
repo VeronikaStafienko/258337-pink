@@ -23,6 +23,27 @@
   margin-bottom: 17px;
 }
 
+.appointment-form__contacts {
+  padding: 33px 20px;
+  padding-bottom: 22px;
+}
+
+.appointment-form__contacts label {
+  font-size: 14px;
+  line-height: 30px;
+  color: #d22856;
+  text-transform: uppercase;
+  margin-left: 20px;
+}
+
+.appointment-form__contacts input {
+  width: 238px;
+  padding: 22px 18px;
+  border: 2px solid #e5e5e5;
+  margin-top: 5px;
+  margin-bottom: 17px;
+}
+
 .appointment-form__progress {
   border: none;
   height: 526px;
@@ -125,6 +146,9 @@
 
 .appointment-form__description {
   padding: 32px 20px;
+  padding-top: 10px;
+  border: none;
+  margin: 0;
 }
 
 .appointment-form__title {
@@ -135,13 +159,27 @@
   color: #d22856;
   text-transform: uppercase;
   margin-bottom: 5px;
+  padding-top: 40px;
 }
 
 .appointment-form__description input {
-  width: 276px;
+  width: 98%;
   height: 196px;
   border: 2px solid #e5e5e5;
   margin-bottom: 18px;
+}
+
+.appointment-form__contacts {
+  border: none;
+}
+
+.appointment-form__contacts legend {
+  font-size: 0;
+  display: none;
+}
+
+.appointment-form__form {
+  text-align: center;
 }
 
 .appointment-form__send {
@@ -155,7 +193,6 @@
   color: #fff;
   text-transform: uppercase;
   background-color: #2aab6d;
-  margin-left: 20px;
   margin-bottom: 20px;
 }
 
@@ -168,4 +205,147 @@
   text-transform: uppercase;
   margin-left: auto;
   margin-right: auto;
+}
+
+@media @tablet-widths {
+  .form {
+    .container();
+    padding: 0 40px;
+  }
+  .appointment-form__block {
+    display: flex;
+    flex-direction: column;
+  }
+  .appointment-form__details {
+    padding: 33px 0;
+  }
+  .appointment-form__item {
+    display: flex;
+    align-items: center;
+  }
+  .appointment-form__details label {
+    margin-left: 0;
+    padding-right: 30px;
+  }
+  .appointment-form__details input {
+    padding: 22px 18px;
+    border: 2px solid #e5e5e5;
+    margin-top: 5px;
+    margin-bottom: 17px;
+    flex-grow: 1;
+  }
+  .appointment-form__additional {
+    order: 1;
+    border: 2px solid #e5e5e5;
+    padding: 0;
+    padding-bottom: 10px;
+    padding-top: 20px;
+    margin: 0;
+    background-color: #fff;
+    margin-bottom: 30px;
+    ;
+  }
+  .radiobuttons__text {
+    display: block;
+    margin-bottom: 40px;
+    margin-top: 3px;
+    font-size: 18px;
+    line-height: 30px;
+    color: #283645;
+  }
+  .appointment-form__additional legend {
+    display: block;
+    line-height: 30px;
+    color: #d22856;
+    padding-top: 0px;
+    padding: 20px;
+    background-color: #fff;
+  }
+  .appointment-form__additional input + label::before {
+    margin-left: 60px;
+    margin-right: 20px;
+  }
+  .appointment-form__contacts {
+    order: 2;
+    border: 2px solid #e5e5e5;
+    padding: 0 60px;
+    padding-bottom: 25px;
+    padding-top: 20px;
+    margin: 0;
+    margin-bottom: 40px;
+  }
+  .appointment-form__contacts legend {
+    display: block;
+    text-align: center;
+    font-size: 14px;
+    line-height: 18px;
+    color: #d22856;
+    text-transform: uppercase;
+    padding: 20px;
+  }
+  .appointment-form__item1 {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .appointment-form__contacts input {
+    width: 92%;
+    margin-bottom: 10px;
+  }
+  .appointment-form__contacts label {
+    display: block;
+  }
+  .appointment-form__progress {
+    order: 3;
+    border: 2px solid #e5e5e5;
+    padding: 0;
+    padding-bottom: 45px;
+    padding-top: 20px;
+    margin: 0;
+    background-color: #fff;
+    margin-bottom: 30px;
+  }
+  .appointment-form__progress legend {
+    display: block;
+    line-height: 30px;
+    color: #d22856;
+    padding-top: 0px;
+    padding: 20px;
+    background-color: #fff;
+  }
+  .appointment-form__progress input + label::before {
+    margin-right: 20px;
+    margin-left: 60px;
+  }
+  .appointment-form__description {
+    order: 4;
+    border: 2px solid #e5e5e5;
+    padding: 0 60px;
+    padding-bottom: 50px;
+    padding-top: 20px;
+    margin: 0;
+    background-color: #fff;
+    margin-bottom: 30px;
+  }
+  .appointment-form__description legend {
+    display: block;
+    line-height: 30px;
+    color: #d22856;
+    padding-top: 0px;
+    padding: 20px;
+    background-color: #fff;
+  }
+  .appointment-form__description input {
+    width: 100%;
+    height: 196px;
+    margin: 0;
+  }
+  .appointment-form__send {
+    margin-left: 0;
+    display: inline-block;
+  }
+  .form__annotation {
+    display: inline-block;
+    margin-left: 134px;
+  }
+
 }
