@@ -12,46 +12,51 @@
   <header class="page-header">
     <div class="page-header__header clearfix">
       <div class="page-header__logo">
+        <picture>
+          <source media="(min-width: 960px)" srcset="img/logo-pink-white-tablet.svg">
+          <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+          <img src="img/logo-pink-white-mobile.svg" alt="PINK" class="photos__logo">
+        </picture>
       </div>
       <div class="page-header__button">
         <button class="page-header__toggle" type="button"><img src="img/icon-menu-cross.svg" width=24 height="23" alt=" закрыть"></button>
       </div>
+      <nav class="main-nav main-nav--closed">
+        <div class="main-nav">
+          <ul class="main-nav__items">
+            <li class="main-nav__item"><a href="">Главная</a></li>
+            <li class="main-nav__item"><a href="">Фотографии</a></li>
+            <li class="main-nav__item">Конкурс</li>
+            <li class="main-nav__item"><a href="">HTML Academy</a></li>
+          </ul>
+        </div>
+      </nav>
     </div>
-    <nav class="main-nav main-nav--closed">
-      <div class="main-nav">
-        <ul class="main-nav__items">
-          <li class="main-nav__item"><a href="">Главная</a></li>
-          <li class="main-nav__item"><a href="">Фотографии</a></li>
-          <li class="main-nav__item">Конкурс</li>
-          <li class="main-nav__item"><a href="">HTML Academy</a></li>
-        </ul>
-      </div>
-    </nav>
   </header>
   <section class="description">
     <h1 class="description__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
     <p class="description__text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
-    <p class="description__text description__text--visually-hidden">Пожалуйста, заполните форму ниже:</p>
+    <p class="description__text description__text--hidden">Пожалуйста, заполните форму ниже:</p>
   </section>
   <section class="form">
     <form class="appointment-form" action="https://echo.htmlacademy.ru/" method="post">
       <div class="appointment-form__block">
         <div class="appointment-form__details">
           <div class="appointment-form__item">
-            <label for="surname">фамилия:</label>
+            <label class="appointment-form__label" for="surname">Фамилия:</label>
             <input type="text" name="name" value="" placeholder="Укажите фамилию*">
           </div>
           <div class="appointment-form__item">
-            <label for="name">имя:</label>
+            <label class="appointment-form__label" for="name">Имя:</label>
             <input type="text" name="surname" value="" placeholder="Введите ваше имя*">
           </div>
           <div class="appointment-form__item">
-            <label for="patronymic">отчество:</label>
+            <label class="appointment-form__label" for="patronymic">Отчество:</label>
             <input type="text" name="patronymic" value="" placeholder="Ну и отчество тоже">
           </div>
         </div>
         <fieldset class="appointment-form__progress">
-          <legend>Ваши безбашенные достижения в путешествии</legend>
+          <legend class="appointment-form__legend">Ваши безбашенные достижения в путешествии</legend>
           <input type="checkbox" id="selfie" name="selfie" checked>
           <label class="appointment-form__icon-check" for="selfie">Сделал селфи с акулой</label>
           <input type="checkbox" id="beach" name="beach" checked>
@@ -66,18 +71,18 @@
           <label class="appointment-form__icon-check" for="hotel">Разгромил отель</label>
         </fieldset>
         <fieldset class="appointment-form__contacts">
-          <legend class="appointment-form__visually hidden">Контактная информация</legend>
-          <div class="appointment-form__item1">
-            <label for="phone">номер телефона</label>
+          <legend class="appointment-form__legend appointment-form__legend--hidden">Контактная информация</legend>
+          <div class="appointment-form__item-1">
+            <label class="appointment-form__contacts-label" for="phone">номер телефона</label>
             <input type="text" name="phone" value="" placeholder="Номер, пожалуйста">
           </div>
-          <div class="appointment-form__item1">
-            <label for="e-mail">адрес почты</label>
+          <div class="appointment-form__item-1">
+            <label class="appointment-form__contacts-label" for="e-mail">адрес почты</label>
             <input type="text" name="e-mail" value="" placeholder="Введите почту*">
           </div>
         </fieldset>
         <fieldset class="appointment-form__additional radiobuttons">
-          <legend>с каким приложением путешествовали?</legend>
+          <legend class="appointment-form__legend">с каким приложением путешествовали?</legend>
           <input class="radiobuttons__input" type="radio" id="ios" name="ios" checked>
           <label class="radiobuttons__text" for="ios">Pink для iOS</label>
           <input class="radiobuttons__input" type="radio" id="android" name="android">
@@ -87,7 +92,7 @@
         </fieldset>
         <fieldset class="appointment-form__description">
           <legend class="appointment-form__title">Опишите свои эмоции</legend>
-          <input type="text" name="text" value="" placeholder="Можно прям в красках, не стесняясь в выражениях">
+          <textarea class="appointment-form__textarea" name="appointment-form__comment" id="appointment-form__comment-field" rows="10" cols="36">Можно прям в красках, не стесняясь в выражениях"</textarea>
         </fieldset>
       </div>
       <div class="appointment-form__form">

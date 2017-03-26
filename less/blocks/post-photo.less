@@ -1,103 +1,203 @@
-.post-photo {
-  .container();
-  text-align: center;
-}
+    .post-photo {
+      .container();
+      text-align: center;
+    }
 
-.post-photo_title {
-  display: block;
-  margin: 0;
-  padding: 40px 30px;
-  padding-bottom: 25px;
-  font-size: 14px;
-  line-height: 30px;
-  color: #283645;
-  margin-bottom: 18px;
-}
+    .post-photo__title {
+      display: block;
+      margin: 0;
+      padding: 40px 30px;
+      padding-bottom: 25px;
+      font-size: 14px;
+      line-height: 30px;
+      color: #283645;
+      margin-bottom: 18px;
+    }
 
-.post-form {
-  background-color: @bg-light;
-  padding-top: 20px;
-  padding-bottom: 30px;
-}
+    .post-form {
+      background-color: @bg-light;
+      padding-top: 20px;
+      padding-bottom: 30px;
+    }
 
-.post-form__transform {
-  list-style: none;
-  padding: 0;
-  margin: 30px 0;
-  margin-left: 52px;
-  .clearfix();
-}
+    .post-form__transformation {
+      margin-bottom: 75px;
+    }
 
-.post-form__btn {
-  display: inline-block;
-  float: left;
-  width: 50px;
-  height: 50px;
-  vertical-align: middle;
-  margin-right: 30px;
-}
+    .post-form__item {
+      display: inline-block;
+    }
 
-post-form__transform a:last-child {
-  margin-right: 0;
-}
+    .post-form__transform {
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 200px;
+      padding: 0;
+      margin: 30px 0;
+      margin-left: auto;
+      margin-right: auto;
+    }
 
-.post-form__btn--crop {
-  background: url("../img/icon-editor-crop.svg") no-repeat;
-  background-position: center;
-}
+    .post-form__btn {
+      display: inline-block;
+    }
 
-.post-form__btn--fill {
-  background: url("../img/icon-editor-fill.svg") no-repeat;
-  background-position: center;
-}
+    .post-form__btn--contrast {
+      margin-right: 0;
+    }
 
-.post-form__btn--contrast {
-  background: url("../img/icon-editor-contrast.svg") no-repeat;
-  background-position: center;
-}
+    svg.post-form__btn--crop {
+      height: 48px;
+      width: 48px;
+    }
 
-.range-controls {
-  position: relative;
-  margin-top: 37px;
-  margin-left: 40px;
-  margin-bottom: 75px;
-}
+    svg.post-form__btn--fill {
+      height: 48px;
+      width: 48px;
+      fill: #a9a9a9;
+    }
 
-.range-controls__scale {
-  width: 240px;
-}
+    svg.post-form__btn--contrast {
+      height: 32px;
+      width: 32px;
+      fill: #a9a9a9;
+    }
 
-.range-controls__bar {
-  height: 2px;
-  background-color: #283645;
-}
+    .range-controls {
+      position: relative;
+      width: 240px;
+      margin-top: 37px;
+      margin-left: auto;
+      margin-right: auto;
+    }
 
-.range-controls__toggle {
-  position: absolute;
-  top: -5px;
-  right: 27%;
-  width: 10px;
-  height: 10px;
-  border: 2px solid #d22856;
-  border-radius: 50%;
-  background-color: #fff;
-}
+    .range-controls__scale {
+      width: 100%;
+    }
 
-.post-form__btn-transparent {
-  width: 280px;
-  border: 3px solid rgba(40, 54, 69, 0.1);
-  border-radius: 30px;
-  padding: 15px 0;
-  text-align: center;
-  font-size: 18px;
-  line-height: 18px;
-  font-weight: bold;
-  color: rgba(40, 54, 69, 0.1);
-  background-color: #fff;
-  margin-bottom: 10px;
-}
+    .range-controls__scale--hidden {
+      width: 0
+    }
 
-.post-form__btn-transparent--active {
-  border: 3px solid #d22856;
-  color: #d22856;
-}
+    .range-controls__bar {
+      height: 2px;
+      background-color: #283645;
+    }
+
+    .range-controls__toggle {
+      position: absolute;
+      top: -5px;
+      left: 80%;
+      width: 10px;
+      height: 10px;
+      border: 2px solid #d22856;
+      border-radius: 50%;
+      background-color: #fff;
+    }
+
+    .post-form__btn-transparent {
+      width: 280px;
+      border: 3px solid rgba(40, 54, 69, 0.1);
+      border-radius: 30px;
+      padding: 15px 0;
+      text-align: center;
+      font-size: 18px;
+      line-height: 18px;
+      font-weight: bold;
+      color: rgba(40, 54, 69, 0.1);
+      background-color: #fff;
+      margin-bottom: 10px;
+    }
+
+    .post-form__btn-transparent--active {
+      border: 3px solid #d22856;
+      color: #d22856;
+    }
+
+    @media @tablet-widths {
+      .post-photo {
+        .container ();
+      }
+      .post-photo__title {
+        font-size: 18px;
+      }
+      .post-form {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        height: 425px;
+        padding-top: 55px;
+        flex-wrap: wrap;
+      }
+      .post-form__transformation {
+        position: relative;
+        margin-bottom: 65px;
+        margin-top: -15px;
+        padding-left: 44px;
+      }
+      .post-form__transform {
+        width: 100%;
+        height: 215px;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        margin: 0;
+      }
+      .post-form__btn {
+        display: block;
+        width: 25px;
+        height: 25px;
+        padding: 0;
+      }
+      .post-form__item {
+        height: 73px;
+        padding: 23px 0;
+        border-bottom: 1px solid #dddfe0;
+      }
+      svg.post-form__btn--crop {
+        height: 22px;
+        width: 22px;
+      }
+      svg.post-form__btn--fill {
+        height: 24px;
+        width: 22px;
+        fill: #d22856;
+      }
+      svg.post-form__btn--contrast {
+        height: 16px;
+        width: 16px;
+        fill: #d22856;
+      }
+      .range-controls {
+        position: absolute;
+        top: -17px;
+        left: 90px;
+        margin: 0;
+      }
+      .range-controls__scale {
+        width: 210px;
+        padding-top: 50px;
+        padding-bottom: 20px;
+      }
+      .range-controls__toggle {
+        top: 45px;
+        left: 155px;
+      }
+      .range-controls__toggle--1 {
+        top: 115px;
+        left: 25px;
+      }
+      .range-controls__toggle--2 {
+        top: 187px;
+        left: 100px;
+      }
+      .post-form__btn-transparent {
+        width: 260px;
+        margin-bottom: 20px;
+        margin-left: 44px;
+        background-color: #f2f2f2;
+      }
+
+    }

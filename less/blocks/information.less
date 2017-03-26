@@ -1,9 +1,9 @@
   .information {
-    .container();
     text-align: center;
     background: url("../img/bg-triangle-white.svg") no-repeat;
     background-position: 50% 20%;
     background-color: @bg-light;
+    overflow: hidden;
   }
 
   .information__slogan {
@@ -23,7 +23,8 @@
     padding-top: 0;
   }
 
-  .information__block {
+  .information__container {
+    .container();
     margin-top: 35px;
     padding-top: 50px;
   }
@@ -44,15 +45,15 @@
     color: #283645;
     padding: 0;
     margin: 0;
-    padding: 0px 20px;
     margin-bottom: 34px;
   }
 
   .information__image {
     height: 285px;
-    background-image: url("../img/iphone-screen1.png");
-    background-repeat: no-repeat;
-    background-position: 50% -20%;
+  }
+
+  .information__image--hidden {
+    display: none;
   }
 
   .information__info--visually_hidden {
@@ -67,17 +68,15 @@
 
   @media @tablet-widths {
     .information {
-      .container();
-      display: flex;
-      flex-wrap: wrap;
       background: url("../img/bg-triangle-white.svg") no-repeat;
-      background-position: 50% 23%;
+      background-position: 50% 22%;
       background-color: @bg-light;
     }
-    .information_slogans {
+    .information__slogans {
       width: 100%;
       text-align: center;
       background-color: #fff;
+      padding: 0 20px;
       padding-bottom: 40px;
     }
     .information__slogan {
@@ -86,36 +85,47 @@
       padding-top: 50px;
       padding-bottom: 0;
     }
-    .information__block {
+    .information__container {
+      display: flex;
+      flex-wrap: wrap;
+      height: 480px;
+      overflow: hidden;
+      padding-top: 0;
+      height: auto;
+    }
+    .information__blocks {
       width: 50%;
       text-align: left;
       padding-top: 16px;
+      margin: 0;
+      margin-left: 40px;
       order: 2;
     }
     .information__image {
       width: 43%;
       height: 493px;
-      margin-left: 40px;
-      background-image: url("../img/iphone-screen-tablet.png");
       order: 1;
+    }
+    .information__image--hidden {
+      display: none;
     }
     .information__title {
       margin-bottom: 0;
       margin-top: 34px;
-      margin-left: 20px;
     }
     .information__description {
-      margin-top: 10px;
-      margin-bottom: 0px;
+      padding: 0;
+      margin-top: 17px;
+      margin-bottom: 20px;
     }
     .information__info {
       display: flex;
       order: 3;
       width: 100%;
       height: 290px;
-      padding: 55px 40px;
+      padding: 55px 20px;
       padding-right: 0;
-      padding-bottom: 0;
+      padding-bottom: 35px;
       background-color: #fff;
     }
     .information__timer {
@@ -123,8 +133,8 @@
       height: 276px;
     }
     .information__text {
-      width: 46%;
-      margin-left: 65px;
+      width: 48%;
+      margin-left: 60px;
       text-align: left;
     }
     .information__head {
@@ -132,18 +142,77 @@
       line-height: 36px;
       font-weight: bold;
       color: #000000;
-      padding-right: 129px;
+      padding-right: 120px;
       margin: 0;
       margin-top: 30px;
-    }
-    .information__description {
-      padding: 0;
-      margin-top: 17px;
-      margin-bottom: 20px;
     }
     .information__more {
       font-size: 14px;
       line-height: 24px;
       color: #d22856;
+    }
+  }
+
+  @media @desktop-widths {
+    .information {
+      margin-top: -110px;
+      background: url("../img/bg-triangle-white.svg") no-repeat;
+      background-position: 50% 25%;
+      background-color: @bg-light;
+    }
+    .information__slogan {
+      font-size: 50px;
+      line-height: 60px;
+      padding-top: 80px;
+      padding-bottom: 0;
+    }
+    .information__container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+    .information__image {
+      width: 190px;
+      height: 300px;
+      overflow: hidden;
+      order: 0;
+    }
+    .information__image--hidden {
+      width: 190px;
+      height: 300px;
+      order: 1;
+      display: inline-block;
+    }
+    .information__blocks {
+      display: flex;
+      justify-content: space-around;
+      width: 100%;
+      text-align: center;
+      padding-top: 16px;
+      margin-left: 0;
+      order: 3;
+    }
+    .information__block {
+      width: 245px;
+    }
+    .information__title {
+      font-size: 30px;
+      line-height: 30px;
+    }
+    .information__description {
+      font-size: 18px;
+      line-height: 30px;
+      color: #283645;
+    }
+    .information__text {
+      width: 54.5%;
+    }
+    .information__info {
+      padding-left: 10px;
+      background-color: @bg-light;
+    }
+    .information__more {
+      font-size: 18px;
+      line-height: 30px;
     }
   }

@@ -12,26 +12,31 @@
   <header class="page-header">
     <div class="page-header__header clearfix">
       <div class="page-header__logo">
+        <picture>
+          <source media="(min-width: 960px)" srcset="img/logo-pink-white-tablet.svg">
+          <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+          <img src="img/logo-pink-white-mobile.svg" alt="PINK" class="photos__logo">
+        </picture>
       </div>
       <div class="page-header__button">
         <button class="page-header__toggle" type="button"><img src="img/icon-menu-cross.svg" width=24 height="23" alt=" закрыть"></button>
       </div>
+      <nav class="main-nav main-nav--closed">
+        <div class="main-nav">
+          <ul class="main-nav__items">
+            <li class="main-nav__item">Главная</li>
+            <li class="main-nav__item"><a href="">Фотографии</a></li>
+            <li class="main-nav__item"><a href="">Конкурс</a></li>
+            <li class="main-nav__item"><a href="">HTML Academy</a></li>
+          </ul>
+        </div>
     </div>
-    <nav class="main-nav main-nav--closed">
-      <div class="main-nav">
-        <ul class="main-nav__items">
-          <li class="main-nav__item">Главная</li>
-          <li class="main-nav__item"><a href="">Фотографии</a></li>
-          <li class="main-nav__item"><a href="">Конкурс</a></li>
-          <li class="main-nav__item"><a href="">HTML Academy</a></li>
-        </ul>
-      </div>
     </nav>
   </header>
   <section class="intro">
     <div class="intro__image"></div>
     <div class="intro__download">
-      <h1 class="intro__title intro__title--visually_hidden">Взгляните<br>
+      <h1 class="intro__title intro__title--hidden">Взгляните<br>
 на жизнь иначе!</h1>
       <ul class="intro__list">
         <li>
@@ -51,26 +56,41 @@
     </div>
   </section>
   <section class="information">
-    <div class="information_slogans">
+    <div class="information__slogans">
       <p class="information__slogan">Устали от серости мегаполиса?</p>
       <p class="information__slogan">Нам есть, что вам
         <br>предложить!</p>
     </div>
-    <div class="information__block">
-      <h2 class="information__title">Поднимает настроение</h2>
-      <p class="information__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
-      <h2 class="information__title">Меняет мир вокруг</h2>
-      <p class="information__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-      <h2 class="information__title">Заводит новых друзей</h2>
-      <p class="information__description">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
+    <div class="information__container">
+      <div class="information__blocks">
+        <div class="information__block">
+          <h2 class="information__title">Поднимает настроение</h2>
+          <p class="information__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+        </div>
+        <div class="information__block">
+          <h2 class="information__title">Меняет мир вокруг</h2>
+          <p class="information__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+        </div>
+        <div class="information__block">
+          <h2 class="information__title">Заводит новых друзей</h2>
+          <p class="information__description">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
+        </div>
+      </div>
+      <div class="information__image">
+        <picture>
+          <source media="(min-width: 960px)" srcset="img/iphone-screen-1-copy.png">
+          <source media="(min-width: 660px)" srcset="img/iphone-screen-tablet.png">
+          <img src="img/iphone-screen1.png" alt="iphone" class="info__image">
+        </picture>
+      </div>
+      <div class="information__image information__image--hidden"><img src="img/iphone-screen-2-copy.png" alt="iphone" class="info__image"></div>
+      <div class="information__image information__image--hidden"><img src="img/iphone-screen-3-copy.png" alt="iphone" class="info__image"></div>
     </div>
-    <div class="information__image"></div>
     <div class="information__info information__info--visually_hidden">
-      <img src="img/timer.png" width="238" height="276" alt="часы">
+      <img src="img/timer.png" width="238" height="276" alt="Часы">
       <div class="information__text">
         <h1 class="information__head">Эффект <br>на 24 часа!</h1>
-        <p class="information__description">Британские ученые провели исследования и доказали, что положительный эффект
-          <br> от использования приложения длится целые сутки!</p>
+        <p class="information__description">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
         <a class="information__more" href="#">Узнать больше об исследовании</a>
       </div>
     </div>
@@ -78,8 +98,8 @@
   <section class="reviews">
     <div class="reviews__text slider">
       <div class="author">
-        <b class="reviews__author_name">Николай Петров</b>
-        <b class="reviews__author_job reviews__author_job--visually_hidden">25 лет, водитель трамвая</b>
+        <b class="reviews__author-name">Николай Петров</b>
+        <b class="reviews__author-job reviews__author-job--hidden">25 лет, водитель трамвая</b>
       </div>
       <p class="reviews__blog">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
       <div class="slider__toggle">
@@ -146,35 +166,36 @@
       <div class="page-footer__info">
         <div class="page-footer__information">
           <b class="page-footer__contacts">Звоните:</b>
-          <a href="tel:+78125556666"> +7 (812) 555-66-66</a>
+          <a href="tel:+78125556666">+7 (812) 555-66-66</a>
         </div>
         <div class="page-footer__information">
           <b class="page-footer__contacts">Пишите:</b>
-          <a href="e-mail:mail@htmlacademy.ru"><span class="page-footer__contacts-hidden">mail@htmlacademy.ru</a>
+          <a href="mailto:mail@htmlacademy.ru"><span class="page-footer__contacts-hidden">mail@htmlacademy.ru</a>
         </div>
         <div class="page-footer__information">
           <b class="page-footer__contacts">Приезжайте в гости:</b>
-          <a href="№ "><span class="page-footer__contacts-hidden">ул. Большая Конюшенная, 19/8</a>
+          <a href="#"><span class="page-footer__contacts-hidden">ул. Большая Конюшенная, 19/8</a>
         </div>
       </div>
-      <div class="page-footer__map">
+    </div>
+    <div class="page-footer__map">
+    </div>
+    <div class="page-footer__hidden">
+      <div class="page-footer--form__logo">
+        <img src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="PINK">
       </div>
-      <div class="page-footer__visually_hidden">
-        <div class="page-footer--form__logo">
-          <img src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="PINK">
-        </div>
-        <div class="page-footer--form__social clearfix">
-          <a class="page-footer--form__social-link page-footer--form__social-link--tw" href="#"></a>
-          <a class="page-footer--form__social-link page-footer--form__social-link--fb" href="#"></a>
-          <a class="page-footer--form__social-link page-footer--form__social-link--yt" href="#"></a>
-        </div>
-        <div class="page-footer--form__copyright">
-          <span>Разработано:</span>
-          <a class="page-footer-form__copyright-link " href="https://htmlacademy.ru">
-            <img src="img/htmlacademy.svg" width="27" height="34" alt="htmlacademy.ru">
-          </a>
-        </div>
+      <div class="page-footer--form__social clearfix">
+        <a class="page-footer--form__social-link page-footer--form__social-link--tw" href="#"></a>
+        <a class="page-footer--form__social-link page-footer--form__social-link--fb" href="#"></a>
+        <a class="page-footer--form__social-link page-footer--form__social-link--yt" href="#"></a>
       </div>
+      <div class="page-footer--form__copyright">
+        <span>Разработано:</span>
+        <a class="page-footer-form__copyright-link " href="https://htmlacademy.ru">
+          <img src="img/htmlacademy.svg" width="27" height="34" alt="htmlacademy.ru">
+        </a>
+      </div>
+    </div>
   </footer>
 </body>
 
