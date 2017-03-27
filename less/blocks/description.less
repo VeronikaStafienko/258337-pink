@@ -1,27 +1,89 @@
-.description {
-  .container();
-  text-align: center;
-}
+  .description {
+    text-align: center;
+  }
 
-.description__title {
-  background-image: url("../img/bg-back-mobile.jpg");
-  background-position: 50% 25%;
-  background-repeat: no-repeat;
-  margin: 0;
-  padding: 0 45px;
-  padding-top: 30px;
-  padding-bottom: 52px;
-  font-weight: 300;
-  font-size: 24px;
-  line-height: 29px;
-  color: #fff;
-}
+  .description__title {
+    background-image: url("../img/bg-back-mobile.jpg");
+    background-position: 50% 25%;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0 45px;
+    padding-top: 30px;
+    padding-bottom: 52px;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    color: #fff;
+  }
 
-.description__text {
-  margin: 0;
-  padding: 46px 20px;
-  padding-bottom: 0;
-  font-size: 14px;
-  line-height: 30px;
-  color: #283645;
-}
+  .description__text {
+    margin: 0;
+    padding: 46px 20px;
+    padding-bottom: 0;
+    font-size: 14px;
+    line-height: 30px;
+    color: #283645;
+  }
+
+  .description__text--hidden {
+    font-size: 0;
+    height: 0;
+    padding: 0
+  }
+
+  @media @tablet-widths {
+    .description {
+      text-align: center;
+    }
+    .description__title {
+      background-image: url("../img/back-tablet@1x.jpg");
+      background-position: 50% 25%;
+      background-repeat: no-repeat;
+      margin: 0;
+      padding: 75px 45px;
+      font-weight: 300;
+      font-size: 50px;
+      line-height: 60px;
+      color: #fff;
+    }
+    .description__text {
+      margin: 0;
+      padding: 90px 95px;
+      padding-bottom: 0;
+      font-size: 18px;
+      line-height: 30px;
+      color: #283645;
+    }
+    .description p:last-child {
+      padding-top: 0;
+    }
+  }
+
+  @media @desktop-widths {
+    .description__title {
+      position: relative;
+      top: -110px;
+      z-index: -50;
+      background-image: url("../img/back-desktop.jpg");
+      padding: 180px 45px;
+      font-weight: 300;
+      font-size: 50px;
+      line-height: 60px;
+      color: #fff;
+    }
+    .description__text {
+      margin: 0;
+      margin-top: -110px;
+      padding: 90px 95px;
+      padding-bottom: 0;
+      font-size: 18px;
+      line-height: 30px;
+      color: #283645;
+    }
+    .description p:last-child {
+      padding-top: 0;
+    }
+    .description__text--hidden {
+      margin: 0;
+    }
+  }

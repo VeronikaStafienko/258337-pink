@@ -1,7 +1,11 @@
   .page-footer {
-    .container();
     text-align: center;
-    padding-top: 40px;
+    height: 560px;
+    overflow: hidden;
+  }
+
+  .page-footer__wrapper {
+    min-height: 350px;
   }
 
   .page-footer__title {
@@ -10,7 +14,18 @@
     line-height: 29px;
     color: #283645;
     margin: 0;
+    margin-top: 40px;
     margin-bottom: 30px;
+  }
+
+  .page-footer__info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .page-footer__information {
+    width: 280px;
   }
 
   .page-footer__contacts {
@@ -19,10 +34,6 @@
     font-size: 18px;
     line-height: 30px;
     color: #283645;
-  }
-
-  .page-footer__wrapper {
-    padding: 0 20px;
   }
 
   .page-footer__wrapper a {
@@ -37,7 +48,65 @@
 
   .page-footer__map {
     height: 225px;
+    width: 100%;
     background-image: url("../img/icon-map-marker.svg"), url("../img/bg-triangle-white-footer.svg"), url("../img/bg-map-mobile.png");
     background-repeat: no-repeat, no-repeat, no-repeat;
-    background-position: 50% 60%, 50% 0px, bottom;
+    background-position: 50% 60%, 50% -10px, bottom;
+  }
+
+  @media @tablet-widths {
+    .page-footer {
+      text-align: center;
+      padding-top: 40px;
+      height: 845px;
+    }
+    .page-footer__title {
+      font-weight: 300;
+      font-size: 40px;
+      line-height: 50px;
+      color: #283645;
+      margin: 0;
+      padding: 0 50px;
+      margin-bottom: 40px;
+      width: auto;
+    }
+    .page-footer__info {
+      .container();
+    }
+    .page-footer__information {
+      padding-bottom: 15px;
+    }
+    .page-footer__map {
+      height: 380px;
+      width: 100%;
+      background-image: url("../img/icon-map-marker.svg"), url("../img/bg-triangle-white-footer1.svg"), url("../img/bg-map-tablet.png");
+      background-repeat: no-repeat, no-repeat, no-repeat;
+      background-position: 50% 55%, 50% -50px, 50% 75%;
+    }
+    .page-footer__hidden {
+      display: flex;
+      padding: 39px 40px 37px 40px;
+      justify-content: space-between;
+      align-items: center;
+      height: auto;
+    }
+  }
+
+  @media @desktop-widths {
+    .page-footer {
+      height: auto;
+    }
+    .page-footer__title {
+      font-size: 50px;
+      line-height: 60px;
+      padding: 0 245px;
+      margin-bottom: 70px;
+    }
+    .page-footer__map {
+      height: 490px;
+      width: 100%;
+      background-image: url("../img/icon-map-marker.svg"), url("../img/bg-triangle-white-footer1.svg"), url("../img/bg-map-desktop.png");
+      background-repeat: no-repeat, no-repeat, no-repeat;
+      background-position: 50% 65%, 50% -20px, center;
+    }
   }

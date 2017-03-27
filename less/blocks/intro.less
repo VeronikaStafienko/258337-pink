@@ -1,71 +1,143 @@
-.intro {
-  .container();
-  background-color: @bg-dark;
-  text-align: center;
-}
+  .intro {
+    background-color: @bg-dark;
+    text-align: center;
+  }
 
-.intro__image {
-  min-height: 396px;
-  background-image: url("../img/iphone-screen-mobile.png"), url("../img/iphone-5-in-hand-png.png"), url("../img/bg-back-mobile.jpg");
-  background-position: 104px 143px, 0px 110px, bottom;
-  background-repeat: no-repeat, no-repeat, no-repeat;
-  margin-bottom: 45px;
-}
+  .intro__image {
+    min-height: 396px;
+    background-image: url("../img/iphone-hand-mobile@1x.png"), url("../img/bg-back-mobile.jpg");
+    background-position: 0px 110px, bottom;
+    background-repeat: no-repeat, no-repeat;
+    margin-bottom: 45px;
+  }
 
-.intro__list {
-  display: inline-block;
-  .clearfix();
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
+  .intro__title--hidden {
+    font-size: 0;
+    margin: 0;
+    padding: 0;
+  }
 
-.intro__link {
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 18px;
-  color: #ffffff;
-  text-decoration: none;
-}
+  .intro__list {
+    display: inline-block;
+    .clearfix();
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
 
-.intro__link--all {
-  width: 190px;
-  padding: 12px 38px;
-  border: 3px solid #ffffff;
-  border-radius: 30px;
-}
+  .intro__link {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 18px;
+    color: #ffffff;
+    text-decoration: none;
+  }
 
-.intro__link--apple,
-.intro__link--android,
-.intro__link--microsoft {
-  float: left;
-  width: 55px;
-  height: 55px;
-  margin-right: 25px;
-  margin-top: 58px;
-}
+  .intro__link--all {
+    width: 190px;
+    padding: 12px 38px;
+    border: 3px solid #ffffff;
+    border-radius: 30px;
+  }
 
-.intro__link--apple {
-  background: url("../img/logo-apple.svg") no-repeat;
-  margin-left: 40px;
-  margin-top: 47px;
-}
+  .intro__link--apple,
+  .intro__link--android,
+  .intro__link--microsoft {
+    float: left;
+    width: 55px;
+    height: 55px;
+    margin-right: 25px;
+    margin-top: 58px;
+  }
 
-.intro__link--android {
-  background: url("../img/logo-android.svg") no-repeat;
-}
+  .intro__link--apple {
+    background: url("../img/logo-apple.svg") no-repeat;
+    margin-left: 40px;
+    margin-top: 47px;
+  }
 
-.intro__link--microsoft {
-  background: url("../img/logo-microsoft.svg") no-repeat;
-}
+  .intro__link--android {
+    background: url("../img/logo-android.svg") no-repeat;
+  }
 
-.intro__text {
-  padding: 0 38px;
-  padding-top: 15px;
-  padding-bottom: 30px;
-  margin: 0;
-  font-weight: 300;
-  font-size: 14px;
-  line-height: 24px;
-  color: #ffffff;
-}
+  .intro__link--microsoft {
+    background: url("../img/logo-microsoft.svg") no-repeat;
+  }
+
+  .intro__text {
+    padding: 0 38px;
+    padding-top: 15px;
+    padding-bottom: 30px;
+    margin: 0;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 24px;
+    color: #ffffff;
+  }
+
+  @media @tablet-widths {
+    .intro {
+      display: flex;
+      .container();
+      background-color: @bg-dark;
+      background-image: url("../img/iphone-hand-tablet.png"), url("../img/back-tablet@1x.jpg");
+      background-position: 50% bottom, bottom;
+      background-repeat: no-repeat, no-repeat;
+    }
+    .intro__image {
+      height: 0;
+      width: 0;
+    }
+    .intro__download {
+      width: 300px;
+      padding: 80px 0px;
+      padding-bottom: 90px;
+    }
+    .intro__title {
+      font-size: 40px;
+      line-height: 50px;
+      font-weight: 300;
+      color: #fff;
+      margin-bottom: 25px;
+    }
+    .intro__list {
+      padding-top: 25px;
+    }
+    .intro__text {
+      padding: 20px 0px;
+      padding-bottom: 20px;
+      font-size: 18px;
+    }
+  }
+
+  @media @desktop-widths {
+    .intro {
+      .container();
+      position: relative;
+      top: -110px;
+      z-index: -50;
+      background-color: @bg-dark;
+      background-image: url("../img/iphone-hand-tablet.png"), url("../img/back-desktop.jpg");
+      background-position: 50% bottom, bottom;
+      background-repeat: no-repeat, no-repeat;
+    }
+    .intro__title {
+      font-size: 50px;
+      line-height: 60px;
+      font-weight: 300;
+      color: #fff;
+      margin-bottom: 55px;
+      margin-top: 120px;
+    }
+    .intro__link--apple,
+    .intro__link--android,
+    .intro__link--microsoft {
+      margin-top: 70px;
+    }
+    .intro__link--apple {
+      margin-top: 59px;
+    }
+    .intro__text {
+      padding-top: 50px;
+    }
+  }
