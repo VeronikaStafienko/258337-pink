@@ -156,7 +156,7 @@
     .information {
       margin-top: -110px;
       background: url("../img/bg-triangle-white.svg") no-repeat;
-      background-position: 50% 25%;
+      background-position: 50% 24%;
       background-color: @bg-light;
     }
     .information__slogan {
@@ -169,15 +169,17 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: space-around;
+      overflow: visible;
+      height: 580px;
     }
     .information__image {
-      width: 190px;
+      width: 292px;
       height: 300px;
-      overflow: hidden;
+      align-items: center;
       order: 0;
     }
     .information__image--hidden {
-      width: 190px;
+      width: 292px;
       height: 300px;
       order: 1;
       display: inline-block;
@@ -207,8 +209,10 @@
       width: 54.5%;
     }
     .information__info {
-      padding-left: 10px;
+      .container();
       background-color: @bg-light;
+      padding-top: 65px;
+      padding-bottom: 65px;
     }
     .information__more {
       font-size: 18px;
