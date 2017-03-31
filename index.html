@@ -13,7 +13,7 @@
     <div class="page-header__header clearfix">
       <div class="page-header__logo">
         <picture>
-          <source media="(min-width: 960px)" srcset="img/logo-pink-white-tablet.svg">
+          <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
           <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
           <img src="img/logo-pink-white-mobile.svg" alt="PINK" class="photos__logo">
         </picture>
@@ -25,13 +25,13 @@
         <div class="main-nav">
           <ul class="main-nav__items">
             <li class="main-nav__item">Главная</li>
-            <li class="main-nav__item"><a href="">Фотографии</a></li>
-            <li class="main-nav__item"><a href="">Конкурс</a></li>
-            <li class="main-nav__item"><a href="">HTML Academy</a></li>
+            <li class="main-nav__item"><a href="http://127.0.0.1:49983/photo.html">Фотографии</a></li>
+            <li class="main-nav__item"><a href="http://127.0.0.1:49983/form.html">Конкурс</a></li>
+            <li class="main-nav__item"><a href="https://htmlacademy.ru">HTML Academy</a></li>
           </ul>
         </div>
+      </nav>
     </div>
-    </nav>
   </header>
   <section class="intro">
     <div class="intro__image"></div>
@@ -78,13 +78,13 @@
       </div>
       <div class="information__image">
         <picture>
-          <source media="(min-width: 960px)" srcset="img/iphone-screen-1-copy.png">
-          <source media="(min-width: 660px)" srcset="img/iphone-screen-tablet.png">
-          <img src="img/iphone-screen1.png" alt="iphone" class="info__image">
+          <source media="(min-width: 960px)" srcset="img/iphone-screen-1-desktop@1x.png 1x, img/iphone-screen-1-desktop@2x.png 2x">
+          <source media="(min-width: 660px)" srcset="img/iphone-screen-3-tablet@1x.png, img/iphone-screen-3-tablet@2x.png">
+          <img src="img/iphone-screen-mobile@1x.png" srcset="img/iphone-screen-mobile@2x.png 2x" alt="iphone" class="info__image">
         </picture>
       </div>
-      <div class="information__image information__image--hidden"><img src="img/iphone-screen-2-copy.png" alt="iphone" class="info__image"></div>
-      <div class="information__image information__image--hidden"><img src="img/iphone-screen-3-copy.png" alt="iphone" class="info__image"></div>
+      <div class="information__image information__image--hidden"><img src="img/iphone-screen-2-desktop@1x.png" srcset="img/iphone-screen-2-desktop@2x 2x" alt="iphone" class="info__image"></div>
+      <div class="information__image information__image--hidden"><img src="img/iphone-screen-3-desktop@1x.png" srcset="img/iphone-screen-3-desktop@2x 2x" alt="iphone" class="info__image"></div>
     </div>
     <div class="information__info information__info--visually_hidden">
       <img src="img/timer.png" width="238" height="276" alt="Часы">
@@ -101,7 +101,9 @@
         <b class="reviews__author-name">Николай Петров</b>
         <b class="reviews__author-job reviews__author-job--hidden">25 лет, водитель трамвая</b>
       </div>
+      <button class="reviews__arrow-left"></button>
       <p class="reviews__blog">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+      <button class="reviews__arrow-right"></button>
       <div class="slider__toggle">
         <input class="slider__input" type="radio" id="btn-1" name="reviews" checked>
         <input class="slider__input" type="radio" id="btn-2" name="reviews">
@@ -150,7 +152,7 @@
       </ul>
     </div>
     <div class="slider__toggle1">
-      <input class="slider__input1" type="radio " id="btn-4" name="price list">
+      <input class="slider__input1" type="radio" id="btn-4" name="price list">
       <input class="slider__input1" type="radio" id="btn-5" name="price list" checked>
       <input class="slider__input1" type="radio" id="btn-6" name="price list">
       <div class="slider__toggles1">
@@ -170,11 +172,11 @@
         </div>
         <div class="page-footer__information">
           <b class="page-footer__contacts">Пишите:</b>
-          <a href="mailto:mail@htmlacademy.ru"><span class="page-footer__contacts-hidden">mail@htmlacademy.ru</a>
+          <a href="mailto:mail@htmlacademy.ru"><span class="page-footer__contacts-hidden">mail@htmlacademy.ru</span></a>
         </div>
         <div class="page-footer__information">
           <b class="page-footer__contacts">Приезжайте в гости:</b>
-          <a href="#"><span class="page-footer__contacts-hidden">ул. Большая Конюшенная, 19/8</a>
+          <a href="#"><span class="page-footer__contacts-hidden">ул. Большая Конюшенная, 19/8</span></a>
         </div>
       </div>
     </div>
@@ -182,7 +184,11 @@
     </div>
     <div class="page-footer__hidden">
       <div class="page-footer--form__logo">
-        <img src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="PINK">
+        <picture>
+          <source media="(min-width: 960px)" srcset="img/logo-pink-blue-desktop.svg">
+          <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+          <img src="img/logo-pink-white-mobile.svg" alt="PINK" class="photos__logo">
+        </picture>
       </div>
       <div class="page-footer--form__social clearfix">
         <a class="page-footer--form__social-link page-footer--form__social-link--tw" href="#"></a>

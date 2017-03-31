@@ -1,49 +1,98 @@
-.main {
-  text-align: center;
-}
+    .main {
+      text-align: center;
+      background-image: url("../img/bg-back-mobile.jpg");
+      background-position: 50% 25%;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
 
-.main__title {
-  background-image: url("../img/bg-back-mobile.jpg");
-  background-position: 50% 25%;
-  background-repeat: no-repeat;
-  margin: 0;
-  padding: 0 45px;
-  padding-top: 30px;
-  padding-bottom: 80px;
-  font-weight: 300;
-  font-size: 24px;
-  line-height: 29px;
-  color: #fff;
-}
+    .main__title {
+      margin: 0;
+      padding: 0 45px;
+      padding-top: 30px;
+      padding-bottom: 80px;
+      font-weight: 300;
+      font-size: 24px;
+      line-height: 29px;
+      color: #fff;
+    }
 
-.main__text {
-  margin: 0;
-  padding: 46px 35px;
-  padding-bottom: 25px;
-  font-size: 14px;
-  line-height: 30px;
-  color: #283645;
-}
+    .main__text {
+      background-color: #fff;
+      margin: 0;
+      padding: 46px 35px;
+      padding-bottom: 50px;
+      font-size: 14px;
+      line-height: 30px;
+      color: #283645;
+    }
 
-@media @tablet-widths {
-  .main {
-    text-align: center;
-    padding: 0;
-  }
-  .main__title {
-    padding-top: 80px;
-    padding-bottom: 130px;
-    font-weight: 300;
-    font-size: 50px;
-    line-height: 60px;
-    color: #fff;
-  }
-  .main__text {
-    margin: 0;
-    padding: 100px 100px;
-    padding-bottom: 70px;
-    font-size: 18px;
-    line-height: 30px;
-    color: #283645;
-  }
-}
+    @media (min-resolution: 1.5dppx) {
+      .main {
+        background-image: url("../img/bg-back-mobile@2x.jpg");
+      }
+    }
+
+    @media @tablet-widths {
+      .main {
+        text-align: center;
+        padding: 0;
+        background-image: url("../img/bg-back-tablet@1x.jpg");
+        background-position: 50% 25%;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .main__title {
+        padding-top: 80px;
+        padding-bottom: 130px;
+        font-weight: 300;
+        font-size: 50px;
+        line-height: 60px;
+        color: #fff;
+      }
+      .main__text {
+        margin: 0;
+        padding: 90px 100px;
+        padding-bottom: 70px;
+        font-size: 18px;
+        line-height: 30px;
+        color: #283645;
+        background-color: #fff;
+      }
+    }
+
+    @media @tablet-widths and (min-resolution: 1.5dppx) {
+      .main {
+        background-image: url("../img/bg-back-tablet@2x.jpg");
+      }
+    }
+
+    @media @desktop-widths {
+      .main {
+        position: relative;
+        top: -110px;
+        z-index: -50;
+        background-image: url("../img/bg-back-desktop@1x.jpg");
+        background-size: cover;
+        padding-top: 180px;
+        padding-bottom: 0;
+      }
+      .main__title {
+        display: block;
+        width: 370px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0;
+        padding-bottom: 105px;
+        ;
+      }
+      .main__text {
+        padding: 90px 190px;
+      }
+    }
+
+    @media @desktop-widths and (min-resolution: 1.5dppx) {
+      .main {
+        background-image: url("../img/bg-back-desktop@2x.jpg");
+      }
+    }

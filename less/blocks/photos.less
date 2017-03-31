@@ -105,6 +105,11 @@
     .photos__main img {
       margin-left: -40px;
     }
+    .photos__item {
+      width: 300px;
+      height: 455px;
+      position: relative;
+    }
     .photos__list {
       padding: 0;
       display: flex;
@@ -151,11 +156,6 @@
       left: 130px;
       background: url("../img/icon-heart.svg") no-repeat;
     }
-    .photos__item {
-      width: 300px;
-      height: 455px;
-      position: relative;
-    }
     .photos__likes {
       display: block;
       position: absolute;
@@ -170,5 +170,18 @@
       top: 15px;
       left: 260px;
       background: url("../img/icon-heart.svg") no-repeat;
+    }
+  }
+
+  @media @desktop-widths {
+    .photos {
+      margin-top: -110px;
+      padding: 0 10px;
+    }
+    .photos__text {
+      padding: 25px 25px;
+    }
+    .photos__item {
+      height: 555px;
     }
   }
