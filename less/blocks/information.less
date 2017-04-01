@@ -1,9 +1,17 @@
   .information {
+    .container();
     text-align: center;
-    background: url("../img/bg-triangle-white.svg") no-repeat;
-    background-position: 50% 20%;
-    background-color: @bg-light;
     overflow: hidden;
+    background-color: @bg-light;
+  }
+
+  .information__blocks {
+    padding: 0 23px;
+  }
+
+  .information__slogans {
+    background-color: #ffffff;
+    margin: 0 -20px;
   }
 
   .information__slogan {
@@ -15,7 +23,6 @@
     padding: 0;
     margin: 0;
     padding-bottom: 28px;
-    background-color: #ffffff;
     padding-top: 40px;
   }
 
@@ -24,9 +31,10 @@
   }
 
   .information__container {
-    .container();
-    margin-top: 35px;
-    padding-top: 50px;
+    background: url("../img/bg-triangle-white.svg") no-repeat;
+    background-position: 50% -5%;
+    margin: 0 -20px;
+    padding-top: 85px;
   }
 
   .information__title {
@@ -45,7 +53,7 @@
     color: #283645;
     padding: 0;
     margin: 0;
-    margin-bottom: 34px;
+    margin-bottom: 33px;
   }
 
   .information__image {
@@ -56,27 +64,15 @@
     display: none;
   }
 
-  .information__info--visually_hidden {
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    padding: 0;
-    border: 0;
-    clip: rect(0 0 0 0);
-    overflow: hidden;
+  .information__info {
+    .container();
+    display: none;
   }
 
   @media @tablet-widths {
-    .information {
-      background: url("../img/bg-triangle-white.svg") no-repeat;
-      background-position: 50% 21%;
-      background-color: @bg-light;
-    }
     .information__slogans {
-      width: 100%;
       text-align: center;
       background-color: #fff;
-      padding: 0 20px;
       padding-bottom: 40px;
     }
     .information__slogan {
@@ -88,21 +84,23 @@
     .information__container {
       display: flex;
       flex-wrap: wrap;
-      height: 480px;
+      height: 460px;
       overflow: hidden;
       padding-top: 0;
+      background-position: 50% -10%;
+      padding-top: 35px;
     }
     .information__blocks {
-      width: 50%;
+      width: 45%;
       text-align: left;
       padding-top: 16px;
       margin: 0;
-      margin-left: 40px;
       order: 2;
     }
     .information__image {
       width: 43%;
       height: 493px;
+      margin-left: 20px;
       order: 1;
     }
     .information__image--hidden {
@@ -110,30 +108,29 @@
     }
     .information__title {
       margin-bottom: 0;
-      margin-top: 34px;
+      margin-top: 37px;
     }
     .information__description {
       padding: 0;
-      margin-top: 17px;
-      margin-bottom: 20px;
+      margin-top: 10px;
+      margin-bottom: 10px;
     }
-    .information__info {
+    .information__info--visually_hidden {
       display: flex;
       order: 3;
-      width: 100%;
-      height: 290px;
-      padding: 55px 20px;
-      padding-right: 0;
+      min-height: 290px;
+      padding-top: 70px;
       padding-bottom: 35px;
+      margin: 0;
       background-color: #fff;
     }
     .information__timer {
-      width: 43%;
+      width: 40%;
       height: 276px;
     }
     .information__text {
-      width: 48%;
-      margin-left: 60px;
+      width: 50%;
+      margin-left: 55px;
       text-align: left;
     }
     .information__head {
@@ -155,31 +152,33 @@
   @media @desktop-widths {
     .information {
       margin-top: -110px;
-      background: url("../img/bg-triangle-white.svg") no-repeat;
-      background-position: 50% 24%;
-      background-color: @bg-light;
+      background-position: 50% 10%;
+    }
+    .information__slogans {
+      padding-bottom: 45px;
     }
     .information__slogan {
       font-size: 50px;
       line-height: 60px;
-      padding-top: 80px;
-      padding-bottom: 0;
+      padding-top: 70px;
     }
     .information__container {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-around;
       overflow: visible;
+      margin: 0 -10px;
+      background-position: 10% -7%;
       height: 580px;
     }
     .information__image {
-      width: 292px;
+      width: 295px;
       height: 300px;
       align-items: center;
       order: 0;
     }
     .information__image--hidden {
-      width: 292px;
+      width: 295px;
       height: 300px;
       order: 1;
       display: inline-block;
@@ -189,33 +188,46 @@
       justify-content: space-around;
       width: 100%;
       text-align: center;
-      padding-top: 16px;
+      padding-top: 40px;
       margin-left: 0;
       order: 3;
     }
     .information__block {
-      width: 245px;
+      width: 235px;
     }
     .information__title {
       font-size: 30px;
       line-height: 30px;
+      margin-top: 10px;
+    }
+    .information__info--visually_hidden {
+      background-color: @bg-light;
+    }
+    .information__head {
+      padding-right: 0;
+      margin-top: 90px;
     }
     .information__description {
+      width: auto;
       font-size: 18px;
       line-height: 30px;
       color: #283645;
+      margin-top: 25px;
+      margin-bottom: 25px;
     }
     .information__text {
-      width: 54.5%;
+      width: 56%;
     }
     .information__info {
-      .container();
-      background-color: @bg-light;
-      padding-top: 65px;
+      padding-top: 40px;
       padding-bottom: 65px;
     }
     .information__more {
       font-size: 18px;
       line-height: 30px;
+    }
+    .information__timer {
+      width: 33%;
+      height: 345px;
     }
   }

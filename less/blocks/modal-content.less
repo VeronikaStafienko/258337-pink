@@ -13,7 +13,7 @@
 
   .modal-content__text {
     display: block;
-    padding: 0 20px;
+    padding: 0;
     font-size: 14px;
     line-height: 24px;
     color: #283645;
@@ -25,6 +25,7 @@
     background-color: #f2f2f2;
     padding-top: 50px;
     padding-bottom: 50px;
+    margin: 0 -20px;
   }
 
   .modal-content__close {
@@ -38,6 +39,10 @@
     color: #fff;
     text-transform: uppercase;
     background-color: #2aab6d;
+  }
+
+  .modal-content--error {
+    padding-bottom: 50px;
   }
 
   @media @tablet-widths {
@@ -81,6 +86,8 @@
     .modal-content__closed {
       padding-top: 47px;
       padding-bottom: 47px;
+      width: auto;
+      margin: 0;
     }
     .modal-content__close {
       width: 460px;

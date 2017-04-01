@@ -1,6 +1,7 @@
   .page-footer {
+    .container();
     text-align: center;
-    height: 560px;
+    height: 610px;
     overflow: hidden;
   }
 
@@ -48,15 +49,15 @@
 
   .page-footer__map {
     height: 225px;
-    width: 100%;
-    background-image: url("../img/icon-map-marker.svg"), url("../img/bg-triangle-white-footer.svg"), url("../img/bg-map-mobile@1x.png");
+    margin: 0 -20px;
+    background-image: url("../img/icon-map-marker.svg"), url("../img/bg-triangle-white-footer.svg"), url("../img/bg-map-tablet@1x.jpg");
     background-repeat: no-repeat, no-repeat, no-repeat;
-    background-position: 50% 60%, 50% -10px, bottom;
+    background-position: 50% 60%, 50% -10px, 50% -420px;
   }
 
   @media (min-resolution: 1.5dppx) {
     .page-footer__map {
-      background-image: url("../img/bg-map-mobile@2x.jpg");
+      background-image: url("../img/bg-map-tablet@2x.jpg");
     }
   }
 
@@ -76,22 +77,19 @@
       margin-bottom: 40px;
       width: auto;
     }
-    .page-footer__info {
-      .container();
-    }
     .page-footer__information {
       padding-bottom: 15px;
     }
     .page-footer__map {
       height: 380px;
-      width: 100%;
+      margin: 0 -20px;
       background-image: url("../img/icon-map-marker.svg"), url("../img/bg-triangle-white-footer1.svg"), url("../img/bg-map-tablet@1x.jpg");
       background-repeat: no-repeat, no-repeat, no-repeat;
       background-position: 50% 55%, 50% -50px, 50% 75%;
     }
     .page-footer__hidden {
       display: flex;
-      padding: 39px 40px 37px 40px;
+      padding: 39px 0 37px 0;
       justify-content: space-between;
       align-items: center;
       height: auto;
@@ -107,19 +105,44 @@
   @media @desktop-widths {
     .page-footer {
       height: auto;
+      padding-top: 70px;
+    }
+    .page-footer__wrapper {
+      min-height: 310px;
     }
     .page-footer__title {
       font-size: 50px;
       line-height: 60px;
-      padding: 0 245px;
-      margin-bottom: 70px;
+      width: 465px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 50px;
+    }
+    .page-footer__info {
+      display: flex;
+      justify-content: space-between;
+    }
+    .page-footer__info div:last-child {
+      order: 1;
+    }
+    .page-footer__info div:nth-child(2) {
+      order: 2;
+    }
+    .page-footer__contacts {
+      margin-bottom: 20px;
     }
     .page-footer__map {
       height: 490px;
-      width: 100%;
       background-image: url("../img/icon-map-marker.svg"), url("../img/bg-triangle-white-footer1.svg"), url("../img/bg-map-desktop@1x.jpg");
       background-repeat: no-repeat, no-repeat, no-repeat;
       background-position: 50% 65%, 50% -20px, center;
+    }
+    .page-footer__hidden {
+      display: flex;
+      padding: 65px 10px 37px 10px;
+      justify-content: space-between;
+      align-items: center;
+      height: auto;
     }
   }
 

@@ -87,9 +87,15 @@
       <div class="information__image information__image--hidden"><img src="img/iphone-screen-3-desktop@1x.png" srcset="img/iphone-screen-3-desktop@2x 2x" alt="iphone" class="info__image"></div>
     </div>
     <div class="information__info information__info--visually_hidden">
-      <img src="img/timer.png" width="238" height="276" alt="Часы">
+      <div class="information__timer">
+        <picture>
+          <source media="(min-width: 960px)" srcset="img/timer-desktop.png">
+          <source media="(min-width: 660px)" srcset="img/timer.png">
+          <img src="img/timer.png" alt="Часы" class="info__timer">
+        </picture>
+      </div>
       <div class="information__text">
-        <h1 class="information__head">Эффект <br>на 24 часа!</h1>
+        <h1 class="information__head">Эффект на 24 часа!</h1>
         <p class="information__description">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
         <a class="information__more" href="#">Узнать больше об исследовании</a>
       </div>
@@ -97,7 +103,7 @@
   </section>
   <section class="reviews">
     <div class="reviews__text slider">
-      <div class="author">
+      <div class="reviews__author">
         <b class="reviews__author-name">Николай Петров</b>
         <b class="reviews__author-job reviews__author-job--hidden">25 лет, водитель трамвая</b>
       </div>
@@ -186,7 +192,7 @@
       <div class="page-footer--form__logo">
         <picture>
           <source media="(min-width: 960px)" srcset="img/logo-pink-blue-desktop.svg">
-          <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+          <source media="(min-width: 660px)" srcset="img/logo-pink-blue-mobile.svg">
           <img src="img/logo-pink-white-mobile.svg" alt="PINK" class="photos__logo">
         </picture>
       </div>

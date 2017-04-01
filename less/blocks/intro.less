@@ -47,7 +47,7 @@
       width: 55px;
       height: 55px;
       margin-right: 25px;
-      margin-top: 58px;
+      margin-top: 57px;
     }
 
     .intro__link--apple {
@@ -86,7 +86,7 @@
         display: flex;
         .container();
         background-color: @bg-dark;
-        background-image: url("../img/iphone-hand-tablet@1x.png"), url("../img/back-tablet@1x.jpg");
+        background-image: url("../img/iphone-hand-tablet@1x.png"), url("../img/bg-back-tablet@1x.jpg");
         background-position: 50% bottom, bottom;
         background-repeat: no-repeat, no-repeat;
       }
@@ -112,7 +112,16 @@
       .intro__text {
         padding: 20px 0px;
         padding-bottom: 20px;
+        padding-top: 30px;
         font-size: 18px;
+      }
+      .intro__link--apple,
+      .intro__link--android,
+      .intro__link--microsoft {
+        margin-top: 70px;
+      }
+      .intro__link--apple {
+        margin-top: 60px;
       }
     }
 
@@ -130,24 +139,27 @@
         z-index: -50;
         background-color: @bg-dark;
         background-image: url("../img/iphone-hand-desktop@1x.png"), url("../img/bg-back-desktop@1x.jpg");
-        background-position: 50% bottom, bottom;
+        background-position: 40px bottom, bottom;
         background-repeat: no-repeat, no-repeat;
+      }
+      .intro__download {
+        padding-bottom: 100px;
       }
       .intro__title {
         font-size: 50px;
         line-height: 60px;
         font-weight: 300;
         color: #fff;
-        margin-bottom: 55px;
-        margin-top: 120px;
+        margin-bottom: 40px;
+        margin-top: 140px;
       }
       .intro__link--apple,
       .intro__link--android,
       .intro__link--microsoft {
-        margin-top: 70px;
+        margin-top: 90px;
       }
       .intro__link--apple {
-        margin-top: 59px;
+        margin-top: 79px;
       }
       .intro__text {
         padding-top: 50px;
@@ -156,7 +168,6 @@
 
     @media @desktop-widths and (min-resolution: 1.5dppx) {
       .intro {
-        .container();
         background-image: url("../img/iphone-hand-desktop@2x.png"), url("../img/bg-back-desktop@2x.jpg");
       }
     }
