@@ -1,5 +1,4 @@
 .price-list {
-  .container();
   overflow: hidden;
   margin-top: 13px;
   padding-bottom: 99px;
@@ -11,6 +10,7 @@
 }
 
 .price-list__block {
+  .container();
   .clearfix();
   width: 840px;
   transform: translateX(-278px);
@@ -244,8 +244,9 @@
 @media @desktop-widths {
   .price-list {
     background: url("../img/bg-triangle-white.svg") no-repeat;
-    background-position: 100% -22px;
+    background-position: 50% -222px;
     background-color: @bg-light;
+    background-size: cover;
     padding: 0 10px;
     padding-bottom: 95px;
     padding-top: 160px;

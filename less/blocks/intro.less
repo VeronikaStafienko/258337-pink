@@ -83,12 +83,14 @@
 
     @media @tablet-widths {
       .intro {
-        display: flex;
-        .container();
         background-color: @bg-dark;
         background-image: url("../img/iphone-hand-tablet@1x.png"), url("../img/bg-back-tablet@1x.jpg");
         background-position: 50% bottom, bottom;
         background-repeat: no-repeat, no-repeat;
+      }
+      .intro__inner {
+        .container();
+        display: flex;
       }
       .intro__image {
         height: 0;
@@ -126,14 +128,13 @@
     }
 
     @media @tablet-widths and (min-resolution: 1.5dppx) {
-      .intro__image {
+      .intro {
         background-image: url("../img/iphone-hand-tablet@2x.png"), url("../img/bg-back-tablet@2x.jpg");
       }
     }
 
     @media @desktop-widths {
       .intro {
-        .container();
         position: relative;
         top: -110px;
         z-index: -50;
@@ -142,6 +143,8 @@
         background-position: 40px bottom, bottom;
         background-repeat: no-repeat, no-repeat;
       }
+      .intro__inner {
+
       .intro__download {
         padding-bottom: 100px;
       }
