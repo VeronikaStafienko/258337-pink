@@ -1,4 +1,5 @@
     .main {
+      .container();
       text-align: center;
       background-image: url("../img/bg-back-mobile.jpg");
       background-position: 50% 25%;
@@ -18,8 +19,9 @@
     }
 
     .main__text {
+      display: block;
+      margin: 0 -20px;
       background-color: #fff;
-      margin: 0;
       padding: 46px 35px;
       padding-bottom: 50px;
       font-size: 14px;
@@ -70,7 +72,8 @@
     @media @desktop-widths {
       .main {
         position: relative;
-        top: -110px;
+        margin: 0;
+        margin-top: -110px;
         z-index: -50;
         background-image: url("../img/bg-back-desktop@1x.jpg");
         background-size: cover;

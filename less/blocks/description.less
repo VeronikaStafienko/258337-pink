@@ -1,11 +1,18 @@
   .description {
-    text-align: center;
-  }
-
-  .description__title {
     background-image: url("../img/bg-back-mobile.jpg");
     background-position: 50% 25%;
     background-repeat: no-repeat;
+  }
+
+  .description__inner {
+    text-align: center;
+  }
+
+  .description__text-inner {
+    background-color: #fff;
+  }
+
+  .description__title {
     margin: 0;
     padding: 0 45px;
     padding-top: 30px;
@@ -23,6 +30,7 @@
     font-size: 14px;
     line-height: 30px;
     color: #283645;
+    background-color: #fff;
   }
 
   .description__text--hidden {
@@ -39,22 +47,25 @@
 
   @media @tablet-widths {
     .description {
-      text-align: center;
-    }
-    .description__title {
       background-image: url("../img/bg-back-tablet@1x.jpg");
       background-position: 50% 25%;
       background-repeat: no-repeat;
+    }
+    .description__inner {
+      .container();
+    }
+    .description__title {
       margin: 0;
-      padding: 75px 45px;
+      padding: 80px 45px;
+      padding-top: 65px;
       font-weight: 300;
       font-size: 50px;
       line-height: 60px;
       color: #fff;
     }
     .description__text {
-      margin: 0;
-      padding: 90px 95px;
+      margin: 0 -20px;
+      padding: 95px 70px;
       padding-bottom: 0;
       font-size: 18px;
       line-height: 30px;
@@ -63,28 +74,32 @@
     .description p:last-child {
       padding-top: 0;
     }
+    .description__text--hidden {
+      height: auto;
+    }
   }
 
   @media @tablet-widths and (min-resolution: 1.5dppx) {
-    .description__title {
+    .description {
       background-image: url("../img/bg-back-tablet@2x.jpg");
     }
   }
 
   @media @desktop-widths {
-    .description__title {
+    .description {
       position: relative;
       top: -110px;
       z-index: -50;
       background-image: url("../img/bg-back-desktop@1x.jpg");
+    }
+    .description__title {
       padding: 180px 45px;
+      padding-bottom: 90px;
       font-size: 50px;
       line-height: 60px;
     }
     .description__text {
-      margin: 0;
-      margin-top: -110px;
-      padding: 90px 95px;
+      padding: 90px 90px;
       padding-bottom: 0;
       font-size: 18px;
       line-height: 30px;
@@ -95,12 +110,12 @@
     }
     .description__text--hidden {
       margin: 0;
+      margin: 0 -20px;
     }
-
   }
 
   @media @desktop-widths and (min-resolution: 1.5dppx) {
-    .description__title {
+    .description {
       background-image: url("../img/bg-back-desktop@2x.jpg");
     }
   }
