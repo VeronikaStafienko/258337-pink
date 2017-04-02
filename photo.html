@@ -9,43 +9,50 @@
 </head>
 
 <body>
-  <header class="page-header clearfix">
-    <div class="page-header__logo">
-      <picture>
-        <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
-        <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
-        <img src="img/logo-pink-white-mobile.svg" alt="PINK" class="photos__logo">
-      </picture>
-    </div>
-    <div class="page-header__button">
-      <button class="page-header__toggle" type="button"><img src="img/icon-menu-cross.svg" width=24 height="23" alt=" закрыть"></button>
-    </div>
-    <nav class="main-nav main-nav--closed">
-      <div class="main-nav">
-        <ul class="main-nav__items">
-          <li class="main-nav__item"><a href="http://127.0.0.1:49983/index.html">Главная</a></li>
-          <li class="main-nav__item">Фотографии</li>
-          <li class="main-nav__item"><a href="http://127.0.0.1:49983/form.html">Конкурс</a></li>
-          <li class="main-nav__item"><a href="https://htmlacademy.ru">HTML Academy</a></li>
-        </ul>
+  <header class="page-header">
+    <div class="page-header__header clearfix">
+      <div class="page-header__logo">
+        <picture>
+          <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
+          <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+          <img src="img/logo-pink-white-mobile.svg" alt="PINK" class="photos__logo">
+        </picture>
       </div>
-    </nav>
+      <div class="page-header__button">
+        <button class="page-header__toggle" type="button"><img src="img/icon-menu-cross.svg" width=24 height="23" alt=" закрыть"></button>
+      </div>
+      <nav class="main-nav main-nav--closed">
+        <div class="main-nav">
+          <ul class="main-nav__items">
+            <li class="main-nav__item"><a href="http://localhost:3000/">Главная</a></li>
+            <li class="main-nav__item">Фотографии</li>
+            <li class="main-nav__item"><a href="http://localhost:3000/form.html">Конкурс</a> </li>
+            <li class="main-nav__item"><a href="https://htmlacademy.ru">HTML Academy</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
   </header>
   <section class="main">
-    <h1 class="main__title">Фотографии пользователей</h1>
-    <p class="main__text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+    <div class="main__inner">
+      <h1 class="main__title">Фотографии пользователей</h1>
+    </div>
+    <div class="main__text-inner">
+      <p class="main__text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+    </div>
   </section>
   <section class="photos">
     <div class="photos__main">
       <b class="photos__slogan">Панорама дня</b>
-      <picture>
-        <source media="(min-width: 960px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
-        <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
-        <img src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" alt="Панорама дня" class="photos__img">
-      </picture>
+      <div class="photos__panorama">
+        <picture>
+          <source media="(min-width: 960px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
+          <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
+          <img src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" alt="Панорама дня" class="photos__img">
+        </picture>
+      </div>
       <div class="photos__text">
-        <cite class="photos__auhor-name">Анна</cite>
-        <span class="photos__time">(5 минут назад)</span>
+        <p class="photos__auhor-name">Анна <span class="photos__time">(5 минут назад)</span></p>
         <p class="photos__desc">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
         <span class="photos__likes-1">нравится: 215</span>
       </div>
@@ -58,8 +65,7 @@
           <img src="img/photo-1-mobile@1x.jpg" srcset="img/photo-1-mobile@2x.jpg 2x" alt="Фото-1" class="photos__mobile">
         </picture>
         <div class="photos__text">
-          <cite class="photos__auhor-name">Левон</cite>
-          <span class="photos__time">(5 часов назад)</span>
+          <p class="photos__auhor-name">Левон <span class="photos__time">(5 часов назад)</span></p>
           <p class="photos__desc">Вчера он на луну летал, сегодня в руки к нам попал.</p>
           <span class="photos__likes">нравится: 356</span>
         </div>
@@ -71,8 +77,7 @@
           <img src="img/photo-2-mobile@1x.jpg" srcset="img/photo-2-mobile@2x.jpg 2x" alt="Фото-2" class="photos__mobile">
         </picture>
         <div class="photos__text">
-          <cite class="photos__auhor-name">Антон</cite>
-          <span class="photos__time">(12 часов назад)</span>
+          <p class="photos__auhor-name">Антон <span class="photos__time">(12 часов назад)</span></p>
           <p class="photos__desc">Соседи будут рады!</p>
           <span class="photos__likes">нравится: 666</span>
         </div>
@@ -84,8 +89,7 @@
           <img src="img/photo-3-mobile@1x.jpg" srcset="img/photo-3-mobile@2x.jpg 2x" alt="Фото-3" class="photos__mobile">
         </picture>
         <div class="photos__text">
-          <cite class="photos__auhor-name">Борис</cite>
-          <span class="photos__time">(20 часов назад)</span>
+          <p class="photos__auhor-name">Борис <span class="photos__time">(20 часов назад)</span></p>
           <p class="photos__desc">Здесь могла быть ваша цитата о высоком и вечном.</p>
           <span class="photos__likes">нравится: 215</span>
         </div>
@@ -97,8 +101,7 @@
           <img src="img/photo-4-mobile@1x.jpg" srcset="img/photo-4-mobile@2x.jpg 2x" alt="Фото-4" class="photos__mobile">
         </picture>
         <div class="photos__text">
-          <cite class="photos__auhor-name">Сергей</cite>
-          <span class="photos__time">(25 часов назад)</span>
+          <p class="photos__auhor-name">Сергей <span class="photos__time">(25 часов назад)</span></p>
           <p class="photos__desc">Самая кубанская в мире!</p>
           <span class="photos__likes">нравится: 4</span>
         </div>
@@ -110,8 +113,7 @@
           <img src="img/photo-5-mobile@1x.jpg" srcset="img/photo-5-mobile@2x.jpg 2x" alt="Фото-5" class="photos__mobile">
         </picture>
         <div class="photos__text">
-          <cite class="photos__auhor-name">Максим</cite>
-          <span class="photos__time">(40 часов назад)</span>
+          <p class="photos__auhor-name">Максим <span class="photos__time">(40 часов назад)</span></p>
           <p class="photos__desc">Где снег-то?</p>
           <span class="photos__likes">нравится: 150</span>
         </div>
@@ -123,8 +125,7 @@
           <img src="img/photo-6-mobile@1x.jpg" srcset="img/photo-6-mobile@2x.jpg 2x" alt="Фото-1" class="photos__mobile">
         </picture>
         <div class="photos__text">
-          <cite class="photos__auhor-name">Надежда</cite>
-          <span class="photos__time">(45 часов назад)</span>
+          <p class="photos__auhor-name">Надежда <span class="photos__time">(45 часов назад)</span></p>
           <p class="photos__desc">Всем GM и взаимные лайки!</p>
           <span class="photos__likes">нравится: 2560</span>
         </div>
