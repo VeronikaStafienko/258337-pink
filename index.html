@@ -25,8 +25,8 @@
         <div class="main-nav">
           <ul class="main-nav__items">
             <li class="main-nav__item">Главная</li>
-            <li class="main-nav__item"><a href="http://127.0.0.1:49983/photo.html">Фотографии</a></li>
-            <li class="main-nav__item"><a href="http://127.0.0.1:49983/form.html">Конкурс</a></li>
+            <li class="main-nav__item"><a href="http://localhost:3000/photo.html">Фотографии</a></li>
+            <li class="main-nav__item"><a href="http://localhost:3000/form.html">Конкурс</a></li>
             <li class="main-nav__item"><a href="https://htmlacademy.ru">HTML Academy</a></li>
           </ul>
         </div>
@@ -34,42 +34,58 @@
     </div>
   </header>
   <section class="intro">
-    <div class="intro__image"></div>
-    <div class="intro__download">
-      <h1 class="intro__title intro__title--hidden">Взгляните<br>
+    <div class="intro__inner">
+      <div class="intro__image"></div>
+      <div class="intro__download">
+        <h1 class="intro__title intro__title--hidden">Взгляните<br>
 на жизнь иначе!</h1>
-      <ul class="intro__list">
-        <li>
-          <a class="intro__link intro__link--all " href="# ">Скачать приложение</a></li>
-        <li>
-          <a class="intro__link intro__link--apple " href="# "></a>
-        </li>
-        <li>
-          <a class="intro__link intro__link--android " href="# "></a>
-        </li>
-        <li>
-          <a class="intro__link intro__link--microsoft" href="# "></a>
-        </li>
-      </ul>
-
-      <p class="intro__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+        <ul class="intro__list">
+          <li>
+            <a class="intro__link intro__link--all " href="# ">Скачать приложение</a></li>
+          <li>
+            <a class="intro__link intro__link--apple " href="# "></a>
+          </li>
+          <li>
+            <a class="intro__link intro__link--android " href="# "></a>
+          </li>
+          <li>
+            <a class="intro__link intro__link--microsoft" href="# "></a>
+          </li>
+        </ul>
+        <p class="intro__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+      </div>
     </div>
   </section>
   <section class="information">
     <div class="information__slogans">
-      <p class="information__slogan">Устали от серости мегаполиса?</p>
-      <p class="information__slogan">Нам есть, что вам
-        <br>предложить!</p>
+      <div class="information__slogans-inner">
+        <p class="information__slogan">Устали от серости мегаполиса?</p>
+        <p class="information__slogan">Нам есть, что вам
+          <br>предложить!</p>
+      </div>
     </div>
     <div class="information__container">
-      <div class="information__blocks">
-        <div class="information__block">
-          <h2 class="information__title">Поднимает настроение</h2>
-          <p class="information__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+      <div class="information__container-inner">
+        <div class="information__blocks">
+          <div class="information__block">
+            <h2 class="information__title">Поднимает настроение</h2>
+            <p class="information__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+          </div>
+          <div class="information__block">
+            <h2 class="information__title">Меняет мир вокруг</h2>
+            <p class="information__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+          </div>
+          <div class="information__block">
+            <h2 class="information__title">Заводит новых друзей</h2>
+            <p class="information__description">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
+          </div>
         </div>
-        <div class="information__block">
-          <h2 class="information__title">Меняет мир вокруг</h2>
-          <p class="information__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+        <div class="information__image">
+          <picture>
+            <source media="(min-width: 960px)" srcset="img/iphone-screen-1-desktop@1x.png 1x, img/iphone-screen-1-desktop@2x.png 2x">
+            <source media="(min-width: 660px)" srcset="img/iphone-screen-3-tablet@1x.png, img/iphone-screen-3-tablet@2x.png">
+            <img src="img/iphone-screen-mobile@1x.png" srcset="img/iphone-screen-mobile@2x.png 2x" alt="iphone" class="info__image">
+          </picture>
         </div>
         <div class="information__block">
           <h2 class="information__title">Заводит новых друзей</h2>
@@ -83,21 +99,27 @@
           <img src="img/iphone-screen-mobile@1x.png" srcset="img/iphone-screen-mobile@2x.png 2x" alt="iphone" class="info__image">
         </picture>
       </div>
-      <div class="information__image information__image--hidden"><img src="img/iphone-screen-2-desktop@1x.png" srcset="img/iphone-screen-2-desktop@2x 2x" alt="iphone" class="info__image"></div>
-      <div class="information__image information__image--hidden"><img src="img/iphone-screen-3-desktop@1x.png" srcset="img/iphone-screen-3-desktop@2x 2x" alt="iphone" class="info__image"></div>
     </div>
     <div class="information__info information__info--visually_hidden">
-      <img src="img/timer.png" width="238" height="276" alt="Часы">
-      <div class="information__text">
-        <h1 class="information__head">Эффект <br>на 24 часа!</h1>
-        <p class="information__description">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
-        <a class="information__more" href="#">Узнать больше об исследовании</a>
+      <div class="information__info-inner">
+        <div class="information__timer">
+          <picture>
+            <source media="(min-width: 960px)" srcset="img/timer-desktop.png">
+            <source media="(min-width: 660px)" srcset="img/timer.png">
+            <img src="img/timer.png" alt="Часы" class="info__timer">
+          </picture>
+        </div>
+        <div class="information__text">
+          <h1 class="information__head">Эффект на 24 часа!</h1>
+          <p class="information__description">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+          <a class="information__more" href="#">Узнать больше об исследовании</a>
+        </div>
       </div>
     </div>
   </section>
   <section class="reviews">
     <div class="reviews__text slider">
-      <div class="author">
+      <div class="reviews__author">
         <b class="reviews__author-name">Николай Петров</b>
         <b class="reviews__author-job reviews__author-job--hidden">25 лет, водитель трамвая</b>
       </div>
@@ -186,7 +208,7 @@
       <div class="page-footer--form__logo">
         <picture>
           <source media="(min-width: 960px)" srcset="img/logo-pink-blue-desktop.svg">
-          <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+          <source media="(min-width: 660px)" srcset="img/logo-pink-blue-mobile.svg">
           <img src="img/logo-pink-white-mobile.svg" alt="PINK" class="photos__logo">
         </picture>
       </div>
