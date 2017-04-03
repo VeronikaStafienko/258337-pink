@@ -2,6 +2,7 @@
     background-image: url("../img/bg-back-mobile.jpg");
     background-position: 50% 25%;
     background-repeat: no-repeat;
+    text-align: center;
   }
 
   .description__inner {
@@ -13,7 +14,8 @@
   }
 
   .description__title {
-    margin: 0;
+    .container();
+    margin: 0 auto;
     padding: 0 45px;
     padding-top: 30px;
     padding-bottom: 52px;
@@ -24,7 +26,8 @@
   }
 
   .description__text {
-    margin: 0;
+    .container();
+    margin: 0 auto;
     padding: 46px 20px;
     padding-bottom: 0;
     font-size: 14px;
@@ -51,11 +54,8 @@
       background-position: 50% 25%;
       background-repeat: no-repeat;
     }
-    .description__inner {
-      .container();
-    }
     .description__title {
-      margin: 0;
+      //margin: 0;
       padding: 80px 45px;
       padding-top: 65px;
       font-weight: 300;
@@ -64,7 +64,6 @@
       color: #fff;
     }
     .description__text {
-      margin: 0 -20px;
       padding: 95px 70px;
       padding-bottom: 0;
       font-size: 18px;
@@ -93,12 +92,14 @@
       background-image: url("../img/bg-back-desktop@1x.jpg");
     }
     .description__title {
+      // .container();
       padding: 180px 45px;
       padding-bottom: 90px;
       font-size: 50px;
       line-height: 60px;
     }
     .description__text {
+      // .container();
       padding: 90px 90px;
       padding-bottom: 0;
       font-size: 18px;
@@ -110,7 +111,7 @@
     }
     .description__text--hidden {
       margin: 0;
-      margin: 0 -20px;
+      // margin: 0 -20px;
     }
   }
 
