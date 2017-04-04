@@ -1,11 +1,12 @@
 .reviews {
+  .container();
   padding-top: 45px;
   padding-bottom: 75px;
   text-align: center;
 }
 
-.reviews__text {
-  padding: 0 20px;
+.reviews__author {
+  height: 40px;
 }
 
 .reviews__author-name {
@@ -37,7 +38,7 @@
 
 .slider__toggle {
   position: absolute;
-  right: 125px;
+  left: 100px;
   top: 250px;
 }
 
@@ -83,7 +84,8 @@
   .reviews__text slider {
     position: relative;
   }
-  .author {
+  .reviews__author {
+    height: auto;
     position: absolute;
     bottom: -110px;
     left: 35%;
@@ -105,7 +107,7 @@
   }
   .slider__toggle {
     position: absolute;
-    right: 47%;
+    left: 43%;
     top: 240%;
   }
   .reviews__arrow-left {
@@ -118,7 +120,6 @@
 
 @media @desktop-widths {
   .reviews {
-    .container();
     padding-top: 190px;
     padding-bottom: 125px;
   }
@@ -145,10 +146,10 @@
   .reviews__author-job {
     font-size: 18px;
   }
-  .author {
+  .reviews__author {
     position: absolute;
-    bottom: -110px;
-    left: 40%;
+    bottom: -100px;
+    left: 38%;
   }
   .reviews__blog::before {
     position: absolute;
