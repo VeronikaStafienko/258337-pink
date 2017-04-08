@@ -10,23 +10,25 @@
 
 <body>
   <header class="page-header">
-    <div class="page-header__header clearfix">
-      <div class="page-header__logo">
-        <picture>
-          <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
-          <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
-          <img src="img/logo-pink-white-mobile.svg" alt="PINK" class="photos__logo">
-        </picture>
-      </div>
-      <div class="page-header__button">
-        <button class="page-header__toggle" type="button"><img src="img/icon-menu-cross.svg" width=24 height="23" alt=" закрыть"></button>
+    <div class="page-header__wrapper">
+      <div class="page-header__header clearfix">
+        <div class="page-header__logo">
+          <picture>
+            <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
+            <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+            <img src="img/logo-pink-white-mobile.svg" alt="PINK" class="photos__logo">
+          </picture>
+        </div>
+        <div class="page-header__button">
+          <button class="page-header__toggle" type="button"><img src="img/icon-menu-cross.svg" width=24 height="23" alt=" закрыть"></button>
+        </div>
       </div>
       <nav class="main-nav main-nav--closed">
         <div class="main-nav">
           <ul class="main-nav__items">
             <li class="main-nav__item"><a href="http://localhost:3000/">Главная</a></li>
             <li class="main-nav__item">Фотографии</li>
-            <li class="main-nav__item"><a href="http://localhost:3000/form.html">Конкурс</a> </li>
+            <li class="main-nav__item"><a href="http://localhost:3000/form.html">Конкурс</a></li>
             <li class="main-nav__item"><a href="https://htmlacademy.ru">HTML Academy</a></li>
           </ul>
         </div>
@@ -38,7 +40,7 @@
       <h1 class="main__title">Фотографии пользователей</h1>
     </div>
     <div class="main__text-inner">
-      <p class="main__text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+      <p class="main__text">Взгляните на фотографии, которые выкладывают пользователи! <span>Видите, как не хватает ваших?</span></p>
     </div>
   </section>
   <section class="photos">
@@ -51,10 +53,12 @@
           <img src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" alt="Панорама дня" class="photos__img">
         </picture>
       </div>
-      <div class="photos__text">
-        <p class="photos__auhor-name">Анна <span class="photos__time">(5 минут назад)</span></p>
-        <p class="photos__desc">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
-        <span class="photos__likes-1">нравится: 215</span>
+      <div class="photos__text-wrapper">
+        <div class="photos__text">
+          <p class="photos__auhor-name">Анна <span class="photos__time">(5 минут назад)</span></p>
+          <p class="photos__desc">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+          <span class="photos__likes-1">нравится: 215</span>
+        </div>
       </div>
     </div>
     <ul class="photos__list">
@@ -122,7 +126,7 @@
         <picture>
           <source media="(min-width: 960px)" srcset="img/photo-6-desktop@1x.jpg 1x, img/photo-6-desktop@2x.jpg 2x">
           <source media="(min-width: 660px)" srcset="img/photo-6-tablet@1x.jpg 1x, img/photo-6-tablet@2x.jpg 2x">
-          <img src="img/photo-6-mobile@1x.jpg" srcset="img/photo-6-mobile@2x.jpg 2x" alt="Фото-1" class="photos__mobile">
+          <img src="img/photo-6-mobile@1x.jpg" srcset="img/photo-6-mobile@2x.jpg 2x" alt="Фото-6" class="photos__mobile">
         </picture>
         <div class="photos__text">
           <p class="photos__auhor-name">Надежда <span class="photos__time">(45 часов назад)</span></p>
@@ -194,8 +198,7 @@
     <div class="page-footer--form__logo">
       <picture>
         <source media="(min-width: 960px)" srcset="img/logo-pink-blue-desktop.svg">
-        <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
-        <img src="img/logo-pink-white-mobile.svg" alt="PINK" class="photos__logo">
+        <img src="img/logo-pink-blue-mobile.svg" alt="PINK" class="photos__logo">
       </picture>
     </div>
     <div class="page-footer--form__social clearfix">
@@ -206,7 +209,7 @@
     <div class="page-footer--form__copyright">
       <span>Разработано:</span>
       <a class="page-footer-form__copyright-link " href="https://htmlacademy.ru">
-        <img src="img/htmlacademy.svg" width="27" height="34" alt="htmlacademy.ru">
+        <img src="img/htmlacademy.svg" width="24" height="37" alt="htmlacademy.ru">
       </a>
     </div>
   </footer>

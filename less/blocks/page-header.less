@@ -5,14 +5,15 @@
 .page-header__header {
   .container();
   .clearfix();
-  margin: 0 -20px;
+  //overflow: visible;
+  //margin: 0 -20px;
 }
 
 .page-header__logo {
   float: left;
   padding-top: 25px;
   padding-bottom: 20px;
-  padding-left: 20px;
+  //padding-left: 20px;
 }
 
 .photos__logo {
@@ -23,8 +24,12 @@
   float: right;
   margin: 0;
   vertical-align: middle;
-  padding-right: 20px;
+  //padding-right: 20px;
   padding-top: 20px;
+}
+
+.page-header__button button {
+  padding: 0;
 }
 
 .page-header__toggle {
@@ -44,7 +49,7 @@
     float: right;
     margin: 0;
     padding-top: 35px;
-    padding-right: 20px;
+    //padding-right: 20px;
   }
 }
 
@@ -52,9 +57,16 @@
   .page-header {
     background-color: rgba(0, 0, 0, 0.3);
   }
-  .page-header__header {
+  .page-header__wrapper {
     .clearfix();
     .container();
+  }
+  .page-header__header {
+    float: left;
+    max-width: 320px;
+    padding: 0;
+    //.clearfix();
+    //.container();
   }
   .page-header__logo {
     padding-left: 0;

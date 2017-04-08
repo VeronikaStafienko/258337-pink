@@ -193,6 +193,11 @@
   margin-right: auto;
 }
 
+.icon-mail,
+icon-phone {
+  display: none;
+}
+
 @media @tablet-widths {
   .form {
     padding: 0 20px;
@@ -203,8 +208,7 @@
     flex-direction: column;
   }
   .appointment-form__details {
-    padding: 33px 0;
-    padding-bottom: 0;
+    padding: 0;
   }
   .appointment-form__item {
     display: flex;
@@ -251,6 +255,7 @@
     margin-bottom: 30px;
   }
   .appointment-form__item-1 {
+    position: relative;
     display: flex;
     flex-direction: column-reverse;
     margin-bottom: 25px;
@@ -259,9 +264,35 @@
     width: 92%;
     margin: 0;
     margin-bottom: 10px;
+    z-index: 0;
+  }
+  .appointment-form__icon-phone {
+    position: absolute;
+    display: block;
+    width: 59px;
+    height: 59px;
+    right: 0px;
+    top: 0px;
+    background-color: @bg-light;
+    background-image: url(../img/icon-phone.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .appointment-form__icon-mail {
+    position: absolute;
+    display: block;
+    width: 59px;
+    height: 59px;
+    right: 0px;
+    top: 0px;
+    background-color: @bg-light;
+    background-image: url(../img/icon-mail.svg);
+    background-repeat: no-repeat;
+    background-position: center;
   }
   .appointment-form__contacts-label {
     display: block;
+    position: relative;
   }
   .appointment-form__progress {
     order: 3;
