@@ -1,20 +1,16 @@
 .photos {
-  .container();
+  //  .container();
 }
 
 .photos__main {
   position: relative;
 }
 
-.photos__main img {
-  margin-left: -20px;
-}
-
 .photos__slogan {
   display: block;
   position: absolute;
   width: 104px;
-  left: 130px;
+  left: 160px;
   background-color: #d22856;
   font-size: 12px;
   line-height: 24px;
@@ -23,16 +19,27 @@
   padding: 5px 18px;
 }
 
+.photos__panorama {
+  min-width: 100vw;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
 .photos__list {
   list-style: none;
-  padding: 20px 0;
-  padding-bottom: 0;
   margin: 0;
+  .container();
+  padding-top: 20px;
 }
 
 .photos__item {
   margin-bottom: 20px;
   background-color: @bg-light;
+}
+
+.photos__text-wrapper {
+  .container();
+  margin-top: -5px;
 }
 
 .photos__text {
@@ -105,9 +112,6 @@
     position: relative;
     padding: 0;
   }
-  .photos__main img {
-    margin-left: -40px;
-  }
   .photos__text {
     padding: 18px 25px;
     padding-bottom: 20px;
@@ -115,11 +119,10 @@
   }
   .photos__item {
     width: 300px;
-    height: 455px;
+    min-height: 455px;
     position: relative;
   }
   .photos__list {
-    padding: 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -127,7 +130,7 @@
   }
   .photos__slogan {
     top: 55px;
-    left: 480px;
+    left: 500px;
   }
   .photos__likes {
     display: block;
@@ -153,7 +156,7 @@
     color: #d22856;
     text-transform: uppercase;
     position: absolute;
-    left: 440px;
+    left: 460px;
     bottom: 68px;
   }
   .photos__likes-1::before {
@@ -170,16 +173,19 @@
 @media @desktop-widths {
   .photos {
     margin-top: -110px;
-    padding: 0 10px;
   }
   .photos__main {
     margin-bottom: 0;
+  }
+  .photos__panorama {
+    max-height: 507px;
+    overflow: hidden;
   }
   .photos__text {
     padding: 25px 25px;
   }
   .photos__item {
-    height: 555px;
+    min-height: 555px;
     margin-top: 50px;
     margin-bottom: 0;
   }
@@ -187,15 +193,7 @@
     top: 55px;
     left: 800px;
   }
-  .photos__panorama {
-    width: 1200px;
-    height: 506px;
-  }
-  .photos__panorama img {
-    width: 100%;
-  }
   .photos__likes-1 {
-    ;
     left: 760px;
     bottom: 50px;
   }
